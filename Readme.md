@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Margarita Demina](https://up.htmlacademy.ru/htmlcss/33/user/1401441).
-* Наставник: `Неизвестно`.
+* Наставник: [Roman Zheltov] (https://htmlacademy.ru/profile/id1145037).
 
 ---
 
