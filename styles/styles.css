@@ -151,6 +151,12 @@ body {
     text-transform: uppercase;
 }
 
+.newsletter-description {
+    color: #ffffff;
+    background-color: #000000;
+    text-transform: capitalize;
+}
+
 .newsletter-button {
     line-height: 26px;
     background-color:rgba(131, 179, 211, 1);
@@ -211,11 +217,12 @@ body {
   }
 
  /* reset */
-.button-reset {
+.button-apply {
     color: #ffffff;
     background-color: #83B3D3;
     font-size: 16px;
     line-height: 21px;
+    text-transform: uppercase;
 }
 
 /* Light */
@@ -228,7 +235,7 @@ body {
     text-transform: capitalize;
 }
 
-.hotels {
+.hotels  {
     color: #000000;
     background-color: #ffffff;
     
@@ -243,6 +250,81 @@ body {
     text-transform: uppercase;
 }
 
+/* Item */
+.product-card {
+    background-color: #ffffff;
+  }
+  
+  /* Link */
+.product-card-link {
+    text-decoration: none;
+}
+  
+  /* Title */
+.product-card-title {
+    font-weight: 700;
+    color: #000000;
+}
+  
+  /* Type */
+.product-card-type {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color:#333333;
+    text-transform: capitalize;
+}
+
+.button-rating {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color:#333333;
+    background-color:#F2F2F2;
+    text-transform: uppercase;
+}
+
+.pagination-show-more {
+    font-size: 20px;
+    line-height: 25px;
+    color:#FFFFFF;
+    background-color: #83B3D3;
+    text-transform: uppercase;
+}
+
+/* Link */
+.pagination {
+    background-color: #ffffff;
+}
+  
+.pagination-link {
+    color: #ffffff;
+    background-color: #83B3D3;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+}
+  
+.pagination-current {
+    color: #000000;
+    background-color: #F2F2F2;
+}
+
+.newsletter-catalog {
+    color:#000000;
+    background-color:#ffffff;
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 22px;
+    line-height: 26px
+}
+
+.newsletter-catalog-description {
+    color: #000000;
+    background-color: #ffffff;
+    text-transform: capitalize;
+}
 
 
 
