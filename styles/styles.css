@@ -53,14 +53,14 @@ body {
     font-weight: 700;
     text-align: center;
     color: #000000;
-    background-color:  #ffffff;
+    background-color:#ffffff;
     text-decoration: none; 
 }
 
 .main-index {
     color: #000000;
     background-color: #ffffff;
-    background-image: url("file:///C:/Users/Acer/Documents/html%20academy/1401441-sedona-33/project/images/home_page/index-background.jpg");
+    background-image: url(../project/images/home_page/index-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
@@ -133,7 +133,7 @@ body {
 .newsletter {
     color: #ffffff;
     background-color: #000000;
-    background-image: url("file:///C:/Users/Acer/Documents/html%20academy/1401441-sedona-33/project/images/home_page/background.jpg");
+    background-image: url(../project/images/home_page/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
