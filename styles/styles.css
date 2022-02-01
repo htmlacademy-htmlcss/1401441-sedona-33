@@ -161,7 +161,7 @@ body {
     line-height: 24px;
     color: #000000;
     background-color: #ffffff;
-  }
+}
 
 .contacts-phone {
     color: #000000;
@@ -170,6 +170,76 @@ body {
     font-size: 40px;
     line-height: 40px;
     font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* catalog */
+.main-inner {
+    color:  #ffffff;
+    background-color:  #83B3D3;
+    background-image: url(../project/images/catalog/catalog-background-1.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;  
+}
+
+.inner-header-title {
+    font-size: 60px;
+    line-height: 78x;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    color: #ffffff;
+}
+  
+  /* Link */
+.breadcrumbs-link {
+    color: inherit;
+}
+
+  /* Title */
+.catalog-filter-title {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+  
+  /* Label */
+.control-label {
+    font-weight: 700;
+  }
+
+ /* reset */
+.button-reset {
+    color: #ffffff;
+    background-color: #83B3D3;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+/* Light */
+.button-light {
+    color: #ffffff;
+    background-color: transparent;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.hotels {
+    color: #000000;
+    background-color: #ffffff;
+    
+}
+
+.inner-header-title {
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
