@@ -48,14 +48,13 @@ body {
 }
 
 .navigation-link {
-    font-family: "PT Sans", sans-serif;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
     color: #000000;
-    background-color:#ffffff;
-    text-decoration: none; 
-}
+    background-color: #ffffff;
+    text-decoration: none;
+}    
 
 .main-index {
     color: #000000;
@@ -67,7 +66,6 @@ body {
 
 .welcome-description-sedona {
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
@@ -85,7 +83,6 @@ body {
     color: #000000;
     
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -94,7 +91,6 @@ body {
 
 .advantages-description {
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
@@ -116,7 +112,6 @@ body {
 
 .search-heading {
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -125,7 +120,6 @@ body {
 
 .search {
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px    
 }
@@ -144,7 +138,6 @@ body {
 }
 
 .newsletter-heading {
-    font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -226,7 +219,7 @@ body {
 }
 
 /* Light */
-.button-light {
+.button-reset {
     color: #ffffff;
     background-color: transparent;
     font-size: 18px;
@@ -315,7 +308,6 @@ body {
     color:#000000;
     background-color:#ffffff;
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px
 }
