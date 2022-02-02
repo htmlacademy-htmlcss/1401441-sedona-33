@@ -74,14 +74,12 @@ body {
 
 .welcome-description {
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 35px;
 }
 
 .advantages-item {
     color: #000000;
-    
     text-align: center;
     font-weight: 700;
     font-size: 24px;
@@ -131,7 +129,6 @@ body {
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
-    font-family: "PT Sans", sans-serif;
     font-size: 22px;
     line-height: 26px
     
@@ -174,8 +171,8 @@ body {
 
 /* catalog */
 .main-inner {
-    color:  #ffffff;
-    background-color:  #83B3D3;
+    color:#ffffff;
+    background-color:  #ffffff;
     background-image: url(../project/images/catalog/catalog-background-1.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;  
