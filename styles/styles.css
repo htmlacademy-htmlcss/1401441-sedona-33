@@ -21,12 +21,24 @@
     src: url("fonts/pt-sans-italic.woff2") format("woff2");
 }
 
+html {
+    height: 100%;
+  }
+
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 24px;
     color: #242424;
     background-color: #fbf7f4;
+}
+
+.main-container {
+    flex-grow: 1;
 }
 
 .button {
@@ -39,12 +51,29 @@ body {
     background-color: #756257;
     text-decoration: none;
     text-transform: uppercase;
-  }
+}
 
   /* Pages */
 .page-header {
     color: #000000;
     background: #ffffff;
+}
+
+.navigation {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navigation-list {
+    width: 455px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-user {
+    max-width: 300px;
+    margin-left: auto;
 }
 
 .navigation-link {
@@ -78,7 +107,14 @@ body {
     line-height: 35px;
 }
 
+.welcome {
+    display: block;
+    margin: 0 auto;
+}
+
 .advantages-item {
+    display: flex;
+    justify-content: space-between;
     color: #000000;
     text-align: center;
     font-weight: 700;
@@ -88,6 +124,8 @@ body {
 } 
 
 .advantages-description {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     font-size: 18px;
     line-height: 21px;
@@ -120,9 +158,11 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 26px    
-}
+} 
 
 .newsletter {
+    display: flex;
+    margin: 0 auto;
     color: #ffffff;
     background-color: #000000;
     background-image: url(../project/images/home_page/background.jpg);
@@ -131,10 +171,11 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 26px
-    
 }
 
 .newsletter-heading {
+    width: 800px;
+    text-align: center;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
@@ -150,6 +191,28 @@ body {
 .newsletter-button {
     line-height: 26px;
     background-color:rgba(131, 179, 211, 1);
+}
+
+.page-footer-container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-social-item {
+    width: 107px;
+    margin-right: 61px;
+}
+
+.footer-contacts {
+    width: 720px;
+    margin-right: 53px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 115px;
+    text-align: center;
 }
 
 .page-footer {
