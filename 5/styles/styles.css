@@ -288,8 +288,34 @@ body {
     color: inherit;
 }
 
+.catalog-filter {
+    display: flex;
+    width: 1200px;
+    margin: 36px;
+    justify-content: space-between;
+    align-items: center
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* Title */
-.catalog-filter-title {
+.catalog-filter-title {    
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
