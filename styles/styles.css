@@ -145,7 +145,7 @@ body {
     text-align: center;
 }
 
-.advantages-item .block-light-blue {
+.advantages-item  {
     display: flex;
     flex-direction: column;
     justify-content: center;
