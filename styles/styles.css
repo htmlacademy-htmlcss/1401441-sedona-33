@@ -23,7 +23,7 @@
 
 html {
     height: 100%;
-  }
+}
 
 body {
     margin: 0;
@@ -125,7 +125,8 @@ body {
 
 .advantages-description {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-size: 18px;
     line-height: 21px;
@@ -134,48 +135,37 @@ body {
 }
   
 .blue-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     color: #ffffff;
     background-color: #83B3D3;
 }
 
-.advantages-item .blue-block {
+.block-gray {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-.advantages-item  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.advantages-item .block-gray {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    background-color: rgba(131, 179, 211, 0.2); 
 }
 
 .image-bonus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     display: block;
     margin: 0 auto;
 }
 
 .block-light-blue {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-color: rgba(131, 179, 211, 0.12); 
-}
-
-.block-gray {
-    background-color: rgba(131, 179, 211, 0.2);   
 }
 
 .search-heading {
