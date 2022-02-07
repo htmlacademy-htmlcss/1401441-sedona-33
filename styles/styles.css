@@ -88,6 +88,10 @@ body {
 .main-index {
     color: #000000;
     background-color: #ffffff;
+    
+}
+
+.home-page {
     background-image: url(../project/images/home_page/index-background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
@@ -99,6 +103,11 @@ body {
     font-size: 30px;
     line-height: 35px;
     text-transform: uppercase;
+}
+
+.paragraph {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .welcome-description {
@@ -128,7 +137,6 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    white: 400px;
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
