@@ -238,14 +238,15 @@ body {
 }
 
 .page-footer-container {
+    max-width: 1056px;
+    margin: 0px auto;
     display: flex;
-    width: 1200px;
-    margin: 0 auto;
+    flex-direction: row;
+    min-height: 100%;
 }
 
 .footer-social-item {
-    width: 107px;
-    margin-right: 61px;
+    
 }
 
 .footer-contacts {
@@ -296,6 +297,7 @@ body {
 
 /* Breadcrumbs */
 .breadcrumbs {
+    padding: 0 71px;
     color: #ffffff;
 }
   
@@ -348,6 +350,12 @@ body {
     line-height: 23px;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.catalog-hotel {
+    width: 1058px;
+    text-align: center;
+
 }
 
 .hotels  {
