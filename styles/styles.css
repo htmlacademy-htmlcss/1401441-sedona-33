@@ -26,7 +26,8 @@ html {
 }
 
 body {
-    margin: 0;
+    max-width: 1200px;
+    margin: 0px auto;
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -61,8 +62,13 @@ body {
 
 .navigation {
     display: flex;
-    width: 1200px;
+    width: 1060px;
     margin: 0 auto;
+}
+
+.navigation-logo{
+    width: 140px;
+    margin-right: 30px;
 }
 
 .navigation-list {
@@ -88,13 +94,21 @@ body {
 .main-index {
     color: #000000;
     background-color: #ffffff;
+    background-image: url(../project/images/home_page/index-background.jpg);
+    height: 458;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     
 }
 
-.home-page {
-    background-image: url(../project/images/home_page/index-background.jpg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-logo {
+    display: block;
+    margin: 0 auto;
 }
 
 .welcome-description-sedona {
@@ -114,11 +128,6 @@ body {
     text-align: center;
     font-size: 22px;
     line-height: 35px;
-}
-
-.welcome {
-    display: block;
-    margin: 0 auto;
 }
 
 .advantages-item {
@@ -156,6 +165,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 400px;
     text-align: center;
     background-color: rgba(131, 179, 211, 0.2); 
 }
@@ -174,6 +184,7 @@ body {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 400px;
     background-color: rgba(131, 179, 211, 0.12); 
 }
 
@@ -274,7 +285,11 @@ body {
     background-repeat: no-repeat;  
 }
 
-.inner-header-title {
+
+.inner-title {
+    color:#ffffff;
+    background-color: #ffffff00;
+    padding: 0 71px;
     font-size: 60px;
     line-height: 78x;
 }
@@ -291,29 +306,11 @@ body {
 
 .catalog-filter {
     display: flex;
-    width: 1200px;
-    margin: 36px;
+    width: 1058px;
+    padding: 0 71px;
     justify-content: space-between;
-    align-items: center
-
+    align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   /* Title */
 .catalog-filter-title {    
@@ -326,7 +323,13 @@ body {
   /* Label */
 .control-label {
     font-weight: 700;
-  }
+}
+
+.button-filter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
  /* reset */
 .button-apply {
