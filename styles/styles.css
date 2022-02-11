@@ -361,15 +361,14 @@ body {
 }
 
 .catalog-hotel {
-    width: 1058px;
-    text-align: center;
-
+    width: 1200px;
+    padding: 40;
+    box-sizing: border-box;
 }
 
 .hotels  {
     color: #000000;
-    background-color: #ffffff;
-    
+    background-color: #ffffff; 
 }
 
 .inner-header-title {
