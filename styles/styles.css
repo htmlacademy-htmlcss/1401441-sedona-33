@@ -51,8 +51,7 @@ body {
 
 .main-container {
     flex-grow: 1;
-    padding-top: 51px; 
-    padding-bottom: 82px;
+    padding: 51px 0px;
 }
 
 .button {
@@ -125,7 +124,7 @@ body {
 .welcome-logo {
     display: block;
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 81px;
 }
 
 .welcome-description-sedona {
@@ -137,7 +136,7 @@ body {
 }
 
 .paragraph {
-    margin-top: 145px;
+    padding-top: 68px;
     margin-bottom: 80px;
     color: #000000;
     background-color: #ffffff;
@@ -150,7 +149,6 @@ body {
 }
 
 .advantages-item {
-    margin-top: 0;
     display: flex;
     justify-content: space-between;
     height: 384px;
@@ -175,7 +173,7 @@ body {
 
 .blue-block {
     box-sizing: border-box;
-    padding: 90px;
+    padding: 97px 90px 87px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -186,7 +184,7 @@ body {
 
 .block-gray {
     box-sizing: border-box;
-    padding: 75px;
+    padding: 85px 75px 79px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,7 +204,7 @@ body {
 
 .block-white {
     box-sizing: border-box;
-    padding: 75px;
+    padding: 85px 75px 79px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,7 +214,7 @@ body {
 
 .block-light-blue {
     box-sizing: border-box;
-    padding: 75px;
+    padding: 98px 75px 108px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -226,13 +224,13 @@ body {
 }
 
 .search {
+    padding-top: 91px;
     margin-bottom: 93px; 
     text-align: center;
 }
 
 .search-heading {
-    padding-top: 64px;
-    padding-bottom: 29px;
+    margin-bottom: 29px; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,9 +241,8 @@ body {
 }
 
 .search-description {
-    padding-left: 240px;
-    padding-right: 240px;
-    padding-bottom: 56px;
+    padding: 0px 240px 56px;
+    margin: 0px;
     text-align: center;
     font-size: 22px;
     line-height: 26px    
@@ -275,13 +272,20 @@ body {
 }
 
 .newsletter-description {
-    padding-left: 360px;
-    padding-right: 360px;
+    margin-bottom: 46px;
+    padding: 0px 360px;
     color: #ffffff;
     text-transform: none;
 }
 
+.field {
+    width: 600px;
+    Height: 60px;
+}
+
 .newsletter-button {
+    width: 200px;
+    Height: 60px;
     line-height: 26px;
     background-color:rgba(131, 179, 211, 1);
 }
@@ -296,7 +300,6 @@ body {
 }
 
 .footer-contacts {
-    margin-top: 0;
     margin-bottom: 30px;
     width: 720px;
     margin-right: 53px;
