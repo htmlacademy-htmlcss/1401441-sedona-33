@@ -477,7 +477,32 @@ body {
   
   /* Link */
 .product-list {
-  text-decoration: none; 
+    display: grid;
+    grid-template-columns: repeat(3, 339px); 
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 34px;
+    padding: 0;
+    gap: 10px;  
+}
+
+.product-card {
+    display: grid; 
+    grid-template-rows: 20px 206px min-content auto min-content min-content 20px;
+    grid-template-columns: 20px 299px 20px; 
+}
+
+.product-card-image-link {
+    grid-column: 1 / -1;
+    background-color: #ffffff;
+}
+
+.product-card-title-link,
+.product-card-type,
+.stars,
+.product-card-price,
+.product-card-button {
+  grid-column: 2 / 3;
 }
   
   /* Title */
