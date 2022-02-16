@@ -488,7 +488,7 @@ body {
 
 .product-card {
     display: grid; 
-    grid-template-rows: 20px 206px min-content auto min-content min-content 20px;
+    grid-template-rows: 20px 206px 37px 37px 37px 20px;
     grid-template-columns: 20px 299px 20px; 
 }
 
