@@ -507,7 +507,7 @@ body {
         "type type price"
         "more more favourite"
         "stars rating rating";
-    grid-template-rows: 200px repeat(4, 30px);
+    grid-template-rows: 206px repeat(4, 30px);
     grid-template-columns: 45% 10% 45%;
 }
 
@@ -519,6 +519,8 @@ body {
   
   /* Title */
 .product-card-title {
+    margin: 0px;
+    padding: 16px 0px;
     font-weight: 700;
     color: #000000;
     grid-area: title;
@@ -526,16 +528,26 @@ body {
   
   /* Type */
 .product-card-type {
- /*   font-size: 18px;
+    margin: 0px;
+    padding: 16px 0px;
+    font-size: 18px;
     line-height: 23px;
     font-weight: 400;
-  */  color:#333333;
+    color:#333333;
     text-transform: capitalize;
     grid-area: type;
 }
 
+.product-card-price {
+    margin: 0px;
+    padding: 16px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color:#333333;
+    text-transform: capitalize;
+}
+
 .product-card-more {
-    grid-area: more;
 }
 
 .product-card-favourite {
