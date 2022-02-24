@@ -104,6 +104,18 @@ body {
     color: #756257;
 }
 
+.body svg {
+    fill: #000000;
+}
+
+.body svg:hover {
+    fill: #756257;
+}
+
+.body path {
+    fill: inherit;
+}
+
 .navigation-link:active .navigation-icon {
     color: rgba(117, 98, 87, 0.3)7;
     opacity: 30%;
