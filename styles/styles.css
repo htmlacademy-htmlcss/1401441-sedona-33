@@ -104,15 +104,15 @@ body {
     color: #756257;
 }
 
-.body svg {
+.navigation-icon svg {
     fill: #000000;
 }
 
-.body svg:hover {
+.navigation-icon svg:hover {
     fill: #756257;
 }
 
-.body path {
+.navigation-icon path {
     fill: inherit;
 }
 
