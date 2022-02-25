@@ -632,7 +632,7 @@ body {
   /* Link */
 .product-list {
     display: grid;
-    grid-template-columns: repeat(3, 299px); 
+    grid-template-columns: repeat(3, 340px); 
     list-style-type: none;
     margin: 0;
     margin-bottom: 34px;
