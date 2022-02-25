@@ -637,7 +637,7 @@ body {
     margin: 0;
     margin-bottom: 34px;
     padding: 0;
-    gap: 40px; 
+    gap: 18px; 
 }
 
 .product-card {
@@ -650,6 +650,8 @@ body {
         "stars rating rating";
     grid-template-rows: 206px repeat(4, 30px);
     grid-template-columns: 45% 10% 45%;
+    grid-row-gap: 16px;
+    margin: 20px;
 }
 
 .product-card-image-link {
