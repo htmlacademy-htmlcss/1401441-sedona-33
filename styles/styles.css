@@ -413,7 +413,7 @@ body {
 }
 
 .newsletter-button:focus {
-    outline: 3px solid #756257;
+    border: 3px solid #756257;
     background-color: #68A2CA;
 }
 
@@ -434,7 +434,7 @@ body {
 
 .footer-contacts {
     margin-bottom: 30px;
-    width: 720px;
+    width: 720px; 
     margin-right: 53px;
     text-align: center;
 }
@@ -690,21 +690,29 @@ body {
     text-transform: capitalize;
 }
 
-.product-card-more {
-}
-
 .product-card-favourite {
     grid-area: favourite;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #83B3D3;
+    border-radius: 4px; 
 }
 
 .product-card-rating {
     grid-area: rating;
 }
 
-
 .product-card-stars {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
     grid-area: stars;
 }
+
+.stars {
+    margin-right: 7px;  
+}
+
 .button-rating {
     font-size: 16px;
     line-height: 21px;
