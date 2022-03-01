@@ -513,17 +513,19 @@ body {
 
 .inner-title {
     margin-top: 0;
-    margin-bottom: 15px; 
+    margin-bottom: 20px; 
     color:#ffffff;
-    padding: 0 71px;
+    padding: 12px 0 0 71px;
     font-size: 60px;
     line-height: 78x;
 }
 
 /* Breadcrumbs */
 .breadcrumbs {
+    font-size: 16px;
+    line-height: 21px;
     margin-top: 0;
-    margin-bottom: 71px;
+    margin-bottom: 44px;
     padding: 0 71px;
     color: #ffffff;
 }
@@ -540,7 +542,7 @@ body {
 
 .catalog-filter {
     margin-top: 0;
-    margin-bottom: 127px;
+    margin-bottom: 93px;
     display: flex;
     width: 1058px;
     padding: 0 71px;
@@ -569,6 +571,10 @@ body {
 
  /* reset */
 .button-apply {
+    border-radius: 4px;
+    border: none;
+    width: 160px;
+    height: 48px;
     margin-top: 0;
     margin-bottom: 20px;
     color: #ffffff;
@@ -578,14 +584,44 @@ body {
     text-transform: uppercase;
 }
 
+.button-apply:hover {
+    background-color: #68A2CA;
+}
+
+.button-apply:focus {
+    outline: 3px solid #ffffff;
+    background-color: #E6E6E6;
+}
+
+.button-apply:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: #68A2CA;
+}
+
 /* Light */
 .button-reset {
+    border-radius: 4px;
+    border: none;
     color: #ffffff;
     background-color: transparent;
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.button-reset:hover {
+    opacity: 30%;
+}
+
+.button-reset:focus {
+    outline: 3px solid #83B3D3;
+}
+
+.button-reset:active {
+    outline: none;
+    opacity: 30%;
 }
 
 .hotels-sorting {
@@ -609,8 +645,8 @@ body {
 }
 
 .hotels  {
-    margin-top: 53px;
-    margin-bottom: 30px;
+    margin-top: 32px;
+    margin-bottom: 8px;
     color: #000000;
     background-color: #ffffff; 
 }
@@ -649,7 +685,7 @@ body {
         "more more favourite"
         "stars rating rating";
     grid-template-rows: 206px repeat(4, 30px);
-    grid-template-columns: 45% 10% 45%;
+    grid-template-columns: 133px 27px 141px;
     grid-row-gap: 16px;
     margin: 20px;
 }
@@ -658,21 +694,22 @@ body {
     background-color: #ffffff;
     grid-area: image;
 }
-
   
   /* Title */
 .product-card-title {
     margin: 0px;
-    padding: 16px 0px;
+    padding-bottom: 16px;
     font-weight: 700;
     color: #000000;
     grid-area: title;
+    font-size: 24px;
+    line-height: 31px;
 }
   
   /* Type */
 .product-card-type {
     margin: 0px;
-    padding: 16px 0px;
+    padding-bottom: 16px;
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
@@ -681,9 +718,33 @@ body {
     grid-area: type;
 }
 
+.product-card-more {
+    padding-top: 8px;
+    padding-bottom: 24px;
+    margin-top: -7px;
+    font-size: 16px;
+    line-height: 21px;
+    border-radius: 4px; 
+}
+
+.product-card-more:hover {
+    background-color: #615048;
+}
+
+.product-card-more:focus {
+    outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.product-card-more:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: #615048;
+}
+
 .product-card-price {
     margin: 0px;
-    padding: 16px 0px;
+    padding-bottom: 16px;
     font-size: 18px;
     font-weight: 400;
     color:#333333;
@@ -696,10 +757,38 @@ body {
     line-height: 21px;
     background-color: #83B3D3;
     border-radius: 4px; 
+    padding-top: 8px;
+    padding-bottom: 24px;
+    margin-top: -7px;
+}
+
+.product-card-favourite:hover {
+    background-color: #68A2CA;
+    outline: 1px solid #756257;
+}
+
+.product-card-favourite:focus {
+    outline: 3px solid #756257;
+    background-color: #68A2CA;
+}
+
+.product-card-favourite:active {
+    background-color: #68A2CA;
+    outline: 1px solid #756257;
+    color: rgba(255, 255, 255, 0.76);
 }
 
 .product-card-rating {
     grid-area: rating;
+    border-radius: 4px; 
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400; 
+    color: #000000;
+    background-color: #F2F2F2;
+    margin-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 30px;
 }
 
 .product-card-stars {
@@ -739,10 +828,26 @@ body {
     text-transform: uppercase;
 }
 
+.pagination-show-more:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-show-more:focus {
+    outline: 3px solid #756257;
+    background-color: #68A2CA;
+}
+
+.pagination-show-more:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: #68A2CA;
+}
+
 .pagination-show-more:after {
     content: '';
     position: absolute;
-    top: 1370px;
+    top:50%; 
+    left: 50%; 
     bottom: 70px;
     width: 1055px;
     height: 0;
@@ -750,7 +855,6 @@ body {
     height: 1px;
     display: block;
 }
-
 
 .pagination-show-more::before {
     content: '';
@@ -763,7 +867,6 @@ body {
     height: 1px;
     display: block;
 }
-
 
 /* Link */
 .pagination {
@@ -817,7 +920,7 @@ body {
 }
  
 .newsletter-catalog {
-    margin-top: 73px;
+    margin-top: 56px;
     margin-bottom: 46px;
     color:#000000;
     background-color:#ffffff;
