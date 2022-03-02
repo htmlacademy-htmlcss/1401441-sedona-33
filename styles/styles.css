@@ -66,16 +66,31 @@ body {
     text-transform: uppercase;
 }
 
-.button:hover {
+.booking-item-button:hover {
     background-color: #615048;
 } 
 
-.button:focus {
+.booking-item-button:focus {
     outline: 3px solid #83B3D3;
     background-color: #615048;
 } 
 
-.button:active {
+.booking-item-button:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #615048;
+} 
+
+.search-button:hover {
+    background-color: #615048;
+} 
+
+.search-button:focus {
+    outline: 3px solid #83B3D3;
+    background-color: #615048;
+} 
+
+.search-button:active {
     outline: none;
     color: rgba(255, 255, 255, 0.3);
     background-color: #615048;
@@ -857,6 +872,11 @@ body {
     text-transform: uppercase;
 }
 
+.download-more {
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+}
+
 .pagination-show-more:hover {
     background-color: #68A2CA;
 }
@@ -870,31 +890,6 @@ body {
     outline: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
-}
-
-.pagination-show-more:after {
-    content: '';
-    position: absolute;
-    top:50%; 
-    left: 50%; 
-    bottom: 70px;
-    width: 1055px;
-    height: 0;
-    background-color: #E6E6E6;
-    height: 1px;
-    display: block;
-}
-
-.pagination-show-more::before {
-    content: '';
-    position: absolute;
-    top: 1487px;
-    bottom: 70px;
-    width: 1055px;
-    height: 0;
-    background-color: #E6E6E6;
-    height: 1px;
-    display: block;
 }
 
 /* Link */
