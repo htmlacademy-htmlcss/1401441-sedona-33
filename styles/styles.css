@@ -542,7 +542,7 @@ body {
 
 .catalog-filter {
     margin-top: 0;
-    margin-bottom: 93px;
+    margin-bottom: 108px;
     display: flex;
     width: 1058px;
     padding: 0 71px;
@@ -633,6 +633,7 @@ body {
 
 .select-control {
     display: flex;
+    margin-right: 68px;
     width: 287px;
     height: 48px;
     margin-left: 192px;
@@ -642,6 +643,34 @@ body {
     width: 1200px;
     padding: 0 71px;
     box-sizing: border-box;
+}
+
+.card-grid-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    outline: 2px solid #E6E6E6;
+    border-radius: 4px;
+}
+
+.card-grid-toggle-current {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: #ffffff;
+    outline: 2px solid #000;
+    border-radius: 4px;
+}
+
+.card-grid-toggle svg {
+    fill: #000000;
 }
 
 .hotels  {
