@@ -493,6 +493,29 @@ body {
     margin-bottom: 8px;
 }
 
+.footer-social-item svg {
+    fill: #83B3D3;
+}
+
+.footer-social-item svg:hover {
+    fill: #68A2CA;
+}
+
+.footer-social-item svg:focus {
+    outline: 3px solid #68A2CA;
+    outline-offset: 12px;
+    border-radius: 10px;
+    fill: #68A2CA;
+}
+
+.footer-social-item svg:active {
+    fill: #68a3ca80;
+}
+
+.footer-social-item path {
+    fill: inherit;
+}
+
 .footer-social-item:nth-child(3n) {
     margin-right: 0;
 }
@@ -511,6 +534,49 @@ body {
     line-height: 40px;
     font-weight: 400;
     text-transform: uppercase;
+    text-decoration:none;
+}
+
+.contacts-phone:hover {
+    color: #756257;
+}
+
+.contacts-phone:focus {
+    outline: 3px solid #83B3D3;
+    outline-offset: 15px;
+    border-radius: 10px;
+    color: #756257;
+}
+
+.contacts-phone:active {
+    outline: none;
+    fill: #756257;
+    opacity: 30%;
+}
+
+.footer-logo svg {
+    fill: #000000;
+}
+
+.footer-logo svg:hover {
+    fill: #756257;
+}
+
+.footer-logo svg:focus {
+    outline: 3px solid #68A2CA;
+    outline-offset: 10px;
+    border-radius: 10px;
+    fill: #756257;
+}
+
+.footer-logo svg:active {
+    outline: none;
+    fill: #756257;
+    opacity: 30%;
+}
+
+.footer-logo path {
+    fill: inherit;
 }
 
 /* catalog */
@@ -672,6 +738,18 @@ body {
     border-radius: 4px;
 }
 
+.card-grid-toggle:hover {
+    outline: 2px solid #83B3D3;
+}
+
+.card-grid-toggle:focus {
+    outline: 2px solid #83B3D3;
+}
+
+.card-grid-toggle:active {
+    outline: 2px solid #000000;
+}
+
 .card-grid-toggle-current {
     display: flex;
     align-items: center;
@@ -686,6 +764,18 @@ body {
 
 .card-grid-toggle svg {
     fill: #000000;
+}
+
+.card-grid-toggle-current:hover {
+    outline: 2px solid #83B3D3;
+}
+
+.card-grid-toggle-current:focus {
+    outline: 2px solid #83B3D3;
+}
+
+.card-grid-toggle-current:active {
+    outline: 2px solid #000000;
 }
 
 .hotels  {
