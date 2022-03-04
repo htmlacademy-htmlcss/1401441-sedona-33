@@ -186,6 +186,32 @@ body {
     fill: #000000;
   }
 
+.counter {
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    width: 20px;
+	height: 20px;
+	border-radius: 50px;
+    background-color: #7DB54F;
+    position: absolute;
+    left: 90px;
+    bottom: 30px;
+}
+
+counter::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 100%;
+}
+
+.counter:active {
+    color: rgba(255, 255, 255, 0.288);
+}
+
+
 .navigation-user .navigation-link {
     display: flex;
     align-items:center;
