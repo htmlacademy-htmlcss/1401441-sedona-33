@@ -637,6 +637,22 @@ counter::before {
     color: #ffffff;
 }
 
+.breadcrumbs-item:hover {
+    color: rgba(242, 242, 242, 0.548);
+}
+
+.breadcrumbs-item:focus {
+    outline: 3px solid #83B3D3;
+    color: rgb(255, 255, 255);
+    outline-offset: 10px;
+    border-radius: 4px;
+}
+
+.breadcrumbs-item:active {
+    color: rgba(242, 242, 242, 0.308);
+    outline: none;
+}
+
 .breadcrumbs-link {
     margin: 0;
     padding: 0; 
@@ -1038,11 +1054,28 @@ counter::before {
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+    border-radius: 4px;
 }
   
 .pagination-current {
     color: #000000;
     background-color: #F2F2F2;
+}
+
+.pagination-link:hover {
+    background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+    outline: 3px solid #756257;
+    background-color: #68A2CA;
+    border-radius: 4px;
+}
+
+.pagination-link:active {
+    outline: none;
+    color: rgba(255, 255, 255, 0.76);
+    background-color: #68A2CA;
 }
 
 .select-control-description {
