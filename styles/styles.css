@@ -87,6 +87,7 @@ body {
 
 .search-button:focus {
     outline: 3px solid #83B3D3;
+    border-radius: 10px;
     background-color: #615048;
 } 
 
@@ -198,13 +199,6 @@ body {
     position: absolute;
     left: 90px;
     bottom: 30px;
-}
-
-counter::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    padding-top: 100%;
 }
 
 .counter:active {
@@ -377,6 +371,7 @@ counter::before {
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    outline: none;
 }
 
 .newsletter {
@@ -431,13 +426,15 @@ counter::before {
 }
 
 .field:focus {
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
     background-color: #E6E6E6;
+    border-radius: 10px 0px 0px 10px;
 }
 
-.newsletter-button:active {
+.field:active {
     outline: 2px solid #FF5757;
     background-color: #FFFFFF;
+    outline: none;
 }
 
 .newsletter-button {
@@ -456,6 +453,7 @@ counter::before {
 .newsletter-button:focus {
     border: 3px solid #756257;
     background-color: #68A2CA;
+    border-radius: 0px 10px 10px 0px;
 }
 
 .newsletter-button:active {
@@ -528,8 +526,9 @@ counter::before {
 }
 
 .footer-social-item svg:focus {
-    outline: 3px solid #68A2CA;
-    outline-offset: 12px;
+    border: 3px solid #68A2CA;
+    padding: 12px 9px 12px 9px;
+    border-radius: 10px;
     border-radius: 10px;
     fill: #68A2CA;
 }
@@ -568,8 +567,8 @@ counter::before {
 }
 
 .contacts-phone:focus {
-    outline: 3px solid #83B3D3;
-    outline-offset: 15px;
+    border: 3px solid #83B3D3;
+    padding: 5px 15px 5px 15px;
     border-radius: 10px;
     color: #756257;
 }
@@ -589,8 +588,8 @@ counter::before {
 }
 
 .footer-logo svg:focus {
-    outline: 3px solid #68A2CA;
-    outline-offset: 10px;
+    border: 3px solid #68A2CA;
+    padding: 22px 18px 22px 18px;
     border-radius: 10px;
     fill: #756257;
 }
