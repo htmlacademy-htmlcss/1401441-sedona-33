@@ -469,6 +469,7 @@ body {
     display: flex; 
     align-self: center;
     padding-bottom: 40px;
+    width: 1200px;
     justify-content: space-between;
     font-size: 18px;
     line-height: 24px;
@@ -535,9 +536,9 @@ body {
 }
 
 .footer-social-item:focus {
-    border: 3px solid #68A2CA;
-    padding: 12px 9px 12px 9px;
-    border-radius: 10px;
+    outline: 3px solid #68A2CA;
+    outline-offset: 5px;
+    border-radius: 4px;
     fill: #68A2CA;
 }
 
@@ -558,7 +559,6 @@ body {
     width: 115px;
     text-align: center;
     margin-right: 72px;
-    padding: 8px 16px 8px 16px;
 }
 
 .contacts-phone {
@@ -570,7 +570,6 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration:none;
-    padding: 15px;
 }
 
 .contacts-phone:hover {
@@ -578,7 +577,8 @@ body {
 }
 
 .contacts-phone:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
+    outline-offset: 15px;
     border-radius: 10px;
     color: #756257;
 }
@@ -599,6 +599,7 @@ body {
 
 .footer-logo:focus {
     outline: 3px solid #83B3D3;
+    outline-offset: 15px;
     border-radius: 10px;
     fill: #756257;
 }
