@@ -51,7 +51,7 @@ body {
 
 .main-container {
     flex-grow: 1;
-    padding: 51px 0;
+    padding: 40px 0;
 }
 
 .button {
@@ -435,9 +435,9 @@ body {
 }
 
 .field:active {
-    outline: 2px solid #FF5757;
+    border: 2px solid #FF5757;
     background-color: #FFFFFF;
-    outline: none;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .newsletter-button {
@@ -467,6 +467,8 @@ body {
 
 .page-footer {
     display: flex; 
+    align-self: center;
+    padding-bottom: 40px;
     justify-content: space-between;
     font-size: 18px;
     line-height: 24px;
@@ -475,17 +477,22 @@ body {
 }
 
 .footer-contacts {
-    margin-bottom: 30px;
+    height: 100%;
     width: 720px; 
     margin-right: 53px;
     text-align: center;
 }
 
+.footer-socia {
+    height: 100%;
+}
+
 .footer-social-list {
+    height: 100%;
     display: flex;
     flex-wrap: wrap; 
     width: 127px;
-    margin-left: 72px;
+    margin: 0 0 0 72px;
     padding: 0;
     list-style-type: none;
 }
@@ -516,8 +523,7 @@ body {
 .footer-social-item {
     width: 20px;
     height: 20px;
-    margin-right: 30px; 
-    margin-bottom: 8px;
+    margin-right: 30px;
 }
 
 .footer-social-item svg {
@@ -548,9 +554,11 @@ body {
 }
 
 .footer-logo {
+    height: 100%;
     width: 115px;
     text-align: center;
     margin-right: 72px;
+    padding: 8px 16px 8px 16px;
 }
 
 .contacts-phone {
@@ -562,6 +570,7 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     text-decoration:none;
+    padding: 15px;
 }
 
 .contacts-phone:hover {
@@ -570,7 +579,6 @@ body {
 
 .contacts-phone:focus {
     border: 3px solid #83B3D3;
-    padding: 5px 15px 5px 15px;
     border-radius: 10px;
     color: #756257;
 }
@@ -590,8 +598,7 @@ body {
 }
 
 .footer-logo:focus {
-    border: 3px solid #68A2CA;
-    padding: 22px 18px 22px 18px;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
     fill: #756257;
 }
@@ -713,12 +720,12 @@ body {
 }
 
 .button-apply:focus {
-    outline: 3px solid #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 4px;
     background-color: #E6E6E6;
 }
 
 .button-apply:active {
-    outline: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
 }
@@ -760,8 +767,31 @@ body {
     display: flex;
     margin-right: 68px;
     width: 287px;
+    font: inherit;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333333;
     height: 48px;
     margin-left: 192px;
+    border-radius: 4px;
+    border: 2px solid #E6E6E6;
+    background-image: url("project\images\catalog\dropdown_2.svg");
+    background-position: right 16px center;
+    background-repeat: no-repeat;
+}
+
+.select {
+    margin-right: 17px;
+  }
+
+.select-control:hover {
+  border-color: #83B3D3;
+  border-radius: 4px;
+}
+
+.select-control:focus {
+  outline: 2px solid #83B3D3;
 }
 
 .catalog-hotel {
@@ -783,15 +813,15 @@ body {
 }
 
 .card-grid-toggle:hover {
-    outline: 2px solid #83B3D3;
+    border: 2px solid #83B3D3;
 }
 
 .card-grid-toggle:focus {
-    outline: 2px solid #83B3D3;
+    border: 2px solid #83B3D3;
 }
 
 .card-grid-toggle:active {
-    outline: 2px solid #000000;
+    border: 2px solid #000000;
 }
 
 .card-grid-toggle-current {
@@ -811,15 +841,15 @@ body {
 }
 
 .card-grid-toggle-current:hover {
-    outline: 2px solid #83B3D3;
+    border: 2px solid #83B3D3;
 }
 
 .card-grid-toggle-current:focus {
-    outline: 2px solid #83B3D3;
+    border: 2px solid #83B3D3;
 }
 
 .card-grid-toggle-current:active {
-    outline: 2px solid #000000;
+    border: 2px solid #000000;
 }
 
 .hotels  {
@@ -910,12 +940,12 @@ body {
 }
 
 .product-card-more:focus {
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
+    border-radius: 4px; 
     background-color: #E6E6E6;
 }
 
 .product-card-more:active {
-    outline: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #615048;
 }
@@ -942,18 +972,21 @@ body {
 
 .product-card-favourite:hover {
     background-color: #68A2CA;
-    outline: 1px solid #756257;
+    border: 1px solid #756257;
+    border-radius: 4px;
 }
 
 .product-card-favourite:focus {
-    outline: 3px solid #756257;
+    border: 3px solid #756257;
     background-color: #68A2CA;
+    border-radius: 4px;
 }
 
 .product-card-favourite:active {
     background-color: #68A2CA;
-    outline: 1px solid #756257;
+    border: 1px solid #756257;
     color: rgba(255, 255, 255, 0.76);
+    border-radius: 4px;
 }
 
 .product-card-rating {
@@ -1016,12 +1049,13 @@ body {
 }
 
 .pagination-show-more:focus {
-    outline: 3px solid #756257;
+    border: 3px solid #756257;
     background-color: #68A2CA;
+    border-radius: 4px;
 }
 
 .pagination-show-more:active {
-    outline: none;
+    border: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
 }
@@ -1069,13 +1103,12 @@ body {
 }
 
 .pagination-link:focus {
-    outline: 3px solid #756257;
+    border: 3px solid #756257;
     background-color: #68A2CA;
     border-radius: 4px;
 }
 
 .pagination-link:active {
-    outline: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
 }
