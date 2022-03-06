@@ -66,33 +66,17 @@ body {
     text-transform: uppercase;
 }
 
-.booking-item-button:hover {
-    background-color: #615048;
-} 
-
-.booking-item-button:focus {
-    outline: 3px solid #83B3D3;
-    background-color: #615048;
-} 
-
-.booking-item-button:active {
-    outline: none;
-    color: rgba(255, 255, 255, 0.3);
-    background-color: #615048;
-} 
-
 .search-button:hover {
     background-color: #615048;
 } 
 
 .search-button:focus {
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
     border-radius: 10px;
     background-color: #615048;
 } 
 
 .search-button:active {
-    outline: none;
     color: rgba(255, 255, 255, 0.3);
     background-color: #615048;
 } 
@@ -162,14 +146,18 @@ body {
     line-height: 26px;
 }
 
+.favourites-item {
+    margin-left: -11px;
+}
+
 .navigation-user {
-    max-width: 300px;
+    max-width: 272px;
     margin-left: auto;
 }
 
 .navigation-link {
     display: block;
-    padding: 22px 19px;
+    padding: 22px 17px;
     line-height: 20px;
     font-weight: 700;
     text-align: center;
@@ -197,14 +185,13 @@ body {
 	border-radius: 50px;
     background-color: #7DB54F;
     position: absolute;
-    left: 90px;
+    left: 75px;
     bottom: 30px;
 }
 
 .counter:active {
     color: rgba(255, 255, 255, 0.288);
 }
-
 
 .navigation-user .navigation-link {
     display: flex;
@@ -220,7 +207,23 @@ body {
     border-radius: 4px;
     border: none;
     cursor: pointer; 
+    margin-left: 15px;
 }
+
+.booking-item-button:hover {
+    background-color: #615048;
+} 
+
+.booking-item-button:focus {
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
+    background-color: #615048;
+} 
+
+.booking-item-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #615048;
+} 
 
 .main-index {
     color: #000000;
@@ -454,10 +457,10 @@ body {
     border: 3px solid #756257;
     background-color: #68A2CA;
     border-radius: 0px 10px 10px 0px;
+    height: 62px;
 }
 
 .newsletter-button:active {
-    outline: none;
     color: rgba(255, 255, 255, 1);
     background-color: #68A2CA;
 }
@@ -501,7 +504,7 @@ body {
 }
 
 .footer-social-link:focus {
-    outline: 2px solid #68A2CA;
+    border: 2px solid #68A2CA;
     background-color: rgb(255, 255, 255);
 }
 
@@ -525,10 +528,9 @@ body {
     fill: #68A2CA;
 }
 
-.footer-social-item svg:focus {
+.footer-social-item:focus {
     border: 3px solid #68A2CA;
     padding: 12px 9px 12px 9px;
-    border-radius: 10px;
     border-radius: 10px;
     fill: #68A2CA;
 }
@@ -587,7 +589,7 @@ body {
     fill: #756257;
 }
 
-.footer-logo svg:focus {
+.footer-logo:focus {
     border: 3px solid #68A2CA;
     padding: 22px 18px 22px 18px;
     border-radius: 10px;
@@ -738,7 +740,8 @@ body {
 }
 
 .button-reset:focus {
-    outline: 3px solid #83B3D3;
+    border: 3px solid #83B3D3;
+    border-radius: 4px;
 }
 
 .button-reset:active {
