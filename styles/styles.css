@@ -528,7 +528,7 @@ body {
     fill: #68A2CA;
 }
 
-.footer-social-item svg:focus {
+.footer-social-item:focus {
     border: 3px solid #68A2CA;
     padding: 12px 9px 12px 9px;
     border-radius: 10px;
@@ -589,7 +589,7 @@ body {
     fill: #756257;
 }
 
-.footer-logo svg:focus {
+.footer-logo:focus {
     border: 3px solid #68A2CA;
     padding: 22px 18px 22px 18px;
     border-radius: 10px;
