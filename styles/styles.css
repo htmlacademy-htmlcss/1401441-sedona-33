@@ -68,10 +68,11 @@ body {
 
 .search-button:hover {
     background-color: #615048;
+    cursor: pointer; 
 } 
 
 .search-button:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 10px;
     background-color: #615048;
 } 
@@ -97,6 +98,7 @@ body {
 .navigation-link:hover {
     background-color: #FFFFFF;
     color: #756257;
+    cursor: pointer; 
 } 
 
 .navigation-icon:hover {
@@ -110,6 +112,7 @@ body {
 
 .navigation-link svg:hover {
     fill: #756257;
+    cursor: pointer; 
 }
 
 .navigation-link path {
@@ -212,10 +215,11 @@ body {
 
 .booking-item-button:hover {
     background-color: #615048;
+    cursor: pointer; 
 } 
 
 .booking-item-button:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 4px;
     background-color: #615048;
 } 
@@ -426,16 +430,17 @@ body {
 
 .field:hover {
     background-color: #E6E6E6;
+    cursor: pointer; 
 }
 
 .field:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     background-color: #E6E6E6;
     border-radius: 10px 0px 0px 10px;
 }
 
 .field:active {
-    border: 2px solid #FF5757;
+    outline: 2px solid #FF5757;
     background-color: #FFFFFF;
     border-radius: 10px 0px 0px 10px;
 }
@@ -451,10 +456,11 @@ body {
 
 .newsletter-button:hover {
     background-color: #68A2CA;
+    cursor: pointer; 
 }
 
 .newsletter-button:focus {
-    border: 3px solid #756257;
+    outline: 3px solid #756257;
     background-color: #68A2CA;
     border-radius: 0px 10px 10px 0px;
     height: 62px;
@@ -508,6 +514,7 @@ body {
 
 .footer-social-link:hover {
     color: #68A2CA;
+    cursor: pointer; 
 }
 
 .footer-social-link:focus {
@@ -524,6 +531,7 @@ body {
 }
 
 .footer-social-item {
+    text-align: center;
     width: 20px;
     height: 20px;
     margin-right: 30px;
@@ -535,6 +543,7 @@ body {
 
 .footer-social-item svg:hover {
     fill: #68A2CA;
+    cursor: pointer; 
 }
 
 .footer-social-item svg:active {
@@ -569,6 +578,7 @@ body {
 
 .contacts-phone:hover {
     color: #756257;
+    cursor: pointer; 
 }
 
 .contacts-phone:focus {
@@ -590,6 +600,7 @@ body {
 
 .footer-logo svg:hover {
     fill: #756257;
+    cursor: pointer; 
 }
 
 .footer-logo:focus {
@@ -643,6 +654,7 @@ body {
 
 .breadcrumbs-item:hover {
     color: rgba(242, 242, 242, 0.548);
+    cursor: pointer; 
 }
 
 .breadcrumbs-item:focus {
@@ -713,12 +725,13 @@ body {
 
 .button-apply:hover {
     background-color: #68A2CA;
+    cursor: pointer; 
 }
 
 .button-apply:focus {
-    border: 3px solid #ffffff;
+    outline: 3px solid #ffffff;
     border-radius: 4px;
-    background-color: #E6E6E6;
+    background-color: #68A2CA;
 }
 
 .button-apply:active {
@@ -740,10 +753,11 @@ body {
 
 .button-reset:hover {
     opacity: 30%;
+    cursor: pointer; 
 }
 
 .button-reset:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 4px;
 }
 
@@ -779,15 +793,17 @@ body {
 
 .select {
     margin-right: 17px;
-  }
+}
 
 .select-control:hover {
-  border-color: #83B3D3;
-  border-radius: 4px;
+    border-color: #83B3D3;
+    border-radius: 4px;
+    cursor: pointer; 
 }
 
 .select-control:focus {
-  outline: 2px solid #83B3D3;
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
 }
 
 .catalog-hotel {
@@ -809,15 +825,19 @@ body {
 }
 
 .card-grid-toggle:hover {
-    border: 2px solid #83B3D3;
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
+    cursor: pointer; 
 }
 
 .card-grid-toggle:focus {
-    border: 2px solid #83B3D3;
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
 }
 
 .card-grid-toggle:active {
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
+    border-radius: 4px;
 }
 
 .card-grid-toggle-current {
@@ -837,15 +857,19 @@ body {
 }
 
 .card-grid-toggle-current:hover {
-    border: 2px solid #83B3D3;
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
+    cursor: pointer; 
 }
 
 .card-grid-toggle-current:focus {
-    border: 2px solid #83B3D3;
+    outline: 2px solid #83B3D3;
+    border-radius: 4px;
 }
 
 .card-grid-toggle-current:active {
-    border: 2px solid #000000;
+    outline: 2px solid #000000;
+    border-radius: 4px;
 }
 
 .hotels  {
@@ -933,17 +957,19 @@ body {
 
 .product-card-more:hover {
     background-color: #615048;
+    cursor: pointer; 
 }
 
 .product-card-more:focus {
-    border: 3px solid #83B3D3;
+    outline: 3px solid #83B3D3;
     border-radius: 4px; 
-    background-color: #E6E6E6;
+    background-color: #615048;
 }
 
 .product-card-more:active {
     color: rgba(255, 255, 255, 0.76);
     background-color: #615048;
+    outline: none;
 }
 
 .product-card-price {
@@ -966,24 +992,58 @@ body {
     margin-top: -7px;
 }
 
+.product-card-favourite-active {
+    grid-area: favourite;
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #7DB54F;
+    border-radius: 4px; 
+    padding-top: 8px;
+    padding-bottom: 24px;
+    margin-top: -7px;
+}
+
 .product-card-favourite:hover {
     background-color: #68A2CA;
-    border: 1px solid #756257;
+    outline: 1px solid #756257;
     border-radius: 4px;
+    cursor: pointer; 
 }
 
 .product-card-favourite:focus {
-    border: 3px solid #756257;
+    outline: 3px solid #756257;
     background-color: #68A2CA;
     border-radius: 4px;
 }
 
 .product-card-favourite:active {
     background-color: #68A2CA;
-    border: 1px solid #756257;
+    outline: 1px solid #756257;
     color: rgba(255, 255, 255, 0.76);
     border-radius: 4px;
 }
+
+
+.product-card-favourite-active:hover {
+    background-color: #6C9E42;
+    outline: 1px solid #756257;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.product-card-favourite-active:focus {
+    outline: 3px solid #756257;
+    background-color: #6C9E42;
+    border-radius: 4px;
+}
+
+.product-card-favourite-active:active {
+    background-color: #6C9E42;
+    outline: 1px solid #756257;
+    color: rgba(255, 255, 255, 0.76);
+    border-radius: 4px;
+}
+
 
 .product-card-rating {
     grid-area: rating;
@@ -1042,16 +1102,17 @@ body {
 
 .pagination-show-more:hover {
     background-color: #68A2CA;
+    cursor: pointer; 
 }
 
 .pagination-show-more:focus {
-    border: 3px solid #756257;
+    outline: 3px solid #756257;
     background-color: #68A2CA;
     border-radius: 4px;
 }
 
 .pagination-show-more:active {
-    border: none;
+    outline: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
 }
@@ -1096,15 +1157,17 @@ body {
 
 .pagination-link:hover {
     background-color: #68A2CA;
+    cursor: pointer; 
 }
 
 .pagination-link:focus {
-    border: 3px solid #756257;
+    outline: 3px solid #756257;
     background-color: #68A2CA;
     border-radius: 4px;
 }
 
 .pagination-link:active {
+    outline: none;
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
 }
