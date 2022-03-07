@@ -701,6 +701,56 @@ body {
     font-weight: 700;
 }
 
+.range-scale {
+    position: relative;
+    height: 4px;
+    margin-bottom: 10px;
+    background-color: #ffffff65;
+}
+
+.range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: #FFFFFF;
+}
+
+.range-toggle {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25); 
+}
+
+.range-toggle:focus {
+    border-radius: 4px;
+    outline: 3px solid #83B3D3;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:active {
+    outline: 2px solid #83B3D3;
+    box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+}
+
+.toggle-min {
+    top: -8px;
+    left: -10px;
+}
+  
+  .toggle-max {
+    top: -8px;
+    right: -10px;
+}
+  
+
 .button-filter {
     display: flex;
     flex-direction: column;
