@@ -430,7 +430,6 @@ body {
 
 .field:hover {
     background-color: #E6E6E6;
-    cursor: pointer; 
 }
 
 .field:focus {
@@ -439,9 +438,9 @@ body {
     border-radius: 10px 0px 0px 10px;
 }
 
-.field:active {
+.field:invalid {
     outline: 2px solid #FF5757;
-    background-color: #FFFFFF;
+    background-color: #E6E6E6;
     border-radius: 10px 0px 0px 10px;
 }
 
