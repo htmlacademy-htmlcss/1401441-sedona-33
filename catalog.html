@@ -85,17 +85,21 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>Бассейн
-              </label>
+                <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Бассейн</span>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>Парковка
-              </label>
+                <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Парковка</span>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="checkbox" name="Wi-Fi">Wi-Fi
+                <input class="visually-hidden control-input" type="checkbox" name="pool">
+                <span class="control-mark"></span>
+                <span class="control-label">Wi-Fi</span>
               </label>
             </li>
           </ul>
@@ -105,17 +109,24 @@
           <ul class="catalog-filter-list">
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="shaving-supplies"
-                  checked>Гостиница</label>
+                <input class="visually-hidden control-input" type="radio" name="hotel" value="shaving-supplies"checked>
+                <span class="control-mark"></span>
+                <span class="control-label">Гостиница</span>
+              </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="shaving-supplies">Мотель</label>
+                <input class="visually-hidden control-input" type="radio" name="motel" value="shaving-supplies">
+                <span class="control-mark"></span>
+                <span class="control-label">Мотель</span>
+              </label>
             </li>
             <li class="catalog-filter-item">
               <label class="control">
-                <input class="control-input" type="radio" name="product-group"
-                  value="shaving-supplies">Апартаменты</label>
+                <input class="visually-hidden control-input" type="radio" name="apartament" value="shaving-supplies">
+                <span class="control-mark"></span>
+                <span class="control-label">Апартаменты</span>
+              </label>
             </li>
           </ul>
         </fieldset>
@@ -124,10 +135,12 @@
           <div class="range">
             <div class="range-wrapper-inputs">
               <label class="catalog-filter-label">
-                <input class="range-input" type="number" value="0" name="min-price">от
+                <input class="range-input-from" type="number" value="0" name="min-price">
+                <span class="value-min">от</span>
               </label>
               <label class="catalog-filter-label">
-                <input class="range-input" type="number" value="9000" name="max-price" style="width: 37px">до
+                <input class="range-input-before" type="number" value="9000" name="max-price" style="width: 37px">
+                <span class="value-max">до</span>
               </label>
             </div>
             <div class="range-scale">

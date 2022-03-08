@@ -696,9 +696,55 @@ body {
     color: #ffffff;
 }
 
+.catalog-filter-group {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    border: none;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Control */
+.control {
+    position: relative;
+    display: block;
+    padding-left: 36px;
+}
+  
+  /* Mark */
+.control-mark {
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+}
+
   /* Label */
 .control-label {
     font-weight: 700;
+}
+
+.control-input[type="radio"] + .control-mark {
+    border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background-color: #3F5E72;
+    border-radius: 50%;
+    content: "";
 }
 
 .range-scale {
@@ -749,7 +795,63 @@ body {
     top: -8px;
     right: -10px;
 }
-  
+
+.range-input-from {
+    width: 30px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 4px 0 0 4px;
+    appearance: textfield;
+    padding: 14px 114px 11px 19px;
+    margin-bottom: 23px;
+    margin-right: -6px;
+}
+
+.range-input-before {
+    width: 30px;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 0 4px 4px 0 ;
+    appearance: textfield;
+    padding: 14px 87px 11px 17px;
+    margin-bottom: 23px;
+}
+
+.range-input-before::-webkit-outer-spin-button,
+.range-input-before::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.range-input-from::-webkit-outer-spin-button,
+.range-input-from::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.value-min {
+    position: absolute;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 30%;
+    left: 864px;
+    bottom: 45px;
+}
+
+.value-max {
+    position: absolute;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    opacity: 30%;
+    left: 1020px;
+    bottom: 45px;
+}
 
 .button-filter {
     display: flex;
