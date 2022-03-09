@@ -636,7 +636,7 @@ body {
     margin-top: 0;
     margin-bottom: 20px; 
     color:#ffffff;
-    padding: 12px 0 0 71px;
+    padding: 22px 0 0 71px;
     font-size: 60px;
     line-height: 78x;
 }
@@ -645,10 +645,9 @@ body {
 .breadcrumbs {
     font-size: 16px;
     line-height: 21px;
-    margin-top: 0;
-    margin-bottom: 44px;
     padding: 0 71px;
     color: #ffffff;
+    margin: 0 11px 44px 0;
 }
 
 .breadcrumbs-item:hover {
@@ -669,7 +668,12 @@ body {
 }
 
 .breadcrumbs-link {
-    margin: 0;
+    margin: 0 0 0 10px;
+    padding: 0; 
+}
+
+.breadcrumbs-indicator{
+    margin: 0 0 0 11px;
     padding: 0; 
 }
   
@@ -694,19 +698,24 @@ body {
     line-height: 26px;
     font-weight: 700;
     color: #ffffff;
+    padding: 0px;
 }
 
 .catalog-filter-group {
-    margin: 0;
     margin-bottom: 40px;
     padding: 0;
     border: none;
 }
 
 .catalog-filter-list {
-    margin: 0;
     padding: 0;
     list-style-type: none;
+    margin-bottom: 13px;
+    margin-top: 32px;
+}
+
+.catalog-filter-item:not(:last-child) {
+    margin-bottom: 13px;
 }
 
 /* Control */
@@ -727,9 +736,35 @@ body {
     height: 20px;
 }
 
+.control:hover {
+    color: #ffffff;
+    opacity: 60%;
+}
+
+.control:focus {
+    outline: #83B3D3;
+    border-radius: 4px;
+    opacity: 60%;
+}
+
+.control:active {
+    opacity: 30%;
+}
+
+.control-mark:hover {
+    color: #ffffff;
+}
+
+.control-mark:focus {
+    outline: #83B3D3;
+    border-radius: 50%;
+}
+
   /* Label */
 .control-label {
-    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -791,7 +826,7 @@ body {
     left: -10px;
 }
   
-  .toggle-max {
+.toggle-max {
     top: -8px;
     right: -10px;
 }
@@ -817,7 +852,7 @@ body {
     color: #FFFFFF;
     background-color: transparent;
     border: 2px solid #FFFFFF;
-    border-radius: 0 4px 4px 0 ;
+    border-radius: 0 4px 4px 0;
     appearance: textfield;
     padding: 14px 87px 11px 17px;
     margin-bottom: 23px;
@@ -839,8 +874,42 @@ body {
     line-height: 23px;
     color: #FFFFFF;
     opacity: 30%;
-    left: 864px;
-    bottom: 45px;
+    left: 855px;
+    bottom: 18px;
+}
+
+.range-input-from:hover {
+    outline: 2px solid #FFFFFF;
+    opacity: 60%;
+    border-radius: 4px 0 0 4px;
+}
+
+.range-input-from:focus {
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+    border-radius: 4px 0 0 4px;
+}
+
+.range-input-from:active {
+    outline: 2px solid #FFFFFF;
+    border-radius: 4px 0 0 4px;
+    background-color: #756257;
+}
+
+.range-input-before:hover {
+    outline: 2px solid #FFFFFF;
+    opacity: 60%;
+    border-radius: 0 4px 4px 0;
+}
+
+.range-input-before:focus {
+    box-shadow: 0px 0px 0px 3px #81B3D2;
+    border-radius: 0 4px 4px 0;
+}
+
+.range-input-before:active {
+    outline: 2px solid #FFFFFF;
+    border-radius: 0 4px 4px 0;
+    background-color: #756257;
 }
 
 .value-max {
@@ -849,8 +918,8 @@ body {
     line-height: 23px;
     color: #FFFFFF;
     opacity: 30%;
-    left: 1020px;
-    bottom: 45px;
+    left: 997px;
+    bottom: 19px;
 }
 
 .button-filter {
