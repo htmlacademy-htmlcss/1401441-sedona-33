@@ -718,6 +718,10 @@ body {
     margin-bottom: 13px;
 }
 
+.catalog-filter-lable {
+    position: relative;
+}
+
 /* Control */
 .control {
     position: relative;
@@ -874,8 +878,8 @@ body {
     line-height: 23px;
     color: #FFFFFF;
     opacity: 30%;
-    left: 855px;
-    bottom: 18px;
+    left: 848px;
+    bottom: 17px;
 }
 
 .range-input-from:hover {
@@ -918,8 +922,8 @@ body {
     line-height: 23px;
     color: #FFFFFF;
     opacity: 30%;
-    left: 997px;
-    bottom: 19px;
+    left: 1000px;
+    bottom: 17px;
 }
 
 .button-filter {
