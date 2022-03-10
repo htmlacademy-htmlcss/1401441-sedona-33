@@ -692,6 +692,14 @@ body {
     align-items: center;
 }
 
+.catalog-filter-mark {    
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0;
+    border: none;
+}
+
   /* Title */
 .catalog-filter-title {    
     font-size: 20px;
@@ -699,12 +707,13 @@ body {
     font-weight: 700;
     color: #ffffff;
     padding: 0px;
+    
 }
 
 .catalog-filter-group {
-    margin-bottom: 40px;
-    padding: 0;
+    margin-bottom: 66px;
     border: none;
+    padding-right: 68px;
 }
 
 .catalog-filter-list {
@@ -718,7 +727,7 @@ body {
     margin-bottom: 13px;
 }
 
-.catalog-filter-lable {
+.catalog-filter-label {
     position: relative;
 }
 
@@ -728,7 +737,10 @@ body {
     display: block;
     padding-left: 36px;
 }
-  
+ 
+.catalog-filter-item:not(:last-child) {
+    position: relative;
+}
   /* Mark */
 .control-mark {
     position: absolute;
@@ -786,6 +798,14 @@ body {
     content: "";
 }
 
+.custom-checkbox:checked+label::before {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
 .range-scale {
     position: relative;
     height: 4px;
@@ -806,6 +826,7 @@ body {
     border-radius: 5px;
     background: #FFFFFF;
     cursor: pointer;
+    border: none;
 }
 
 .range-toggle:hover {
@@ -844,7 +865,7 @@ body {
     border: 2px solid #FFFFFF;
     border-radius: 4px 0 0 4px;
     appearance: textfield;
-    padding: 14px 114px 11px 19px;
+    padding: 14px 92px 11px 19px;
     margin-bottom: 23px;
     margin-right: -6px;
 }
@@ -858,8 +879,12 @@ body {
     border: 2px solid #FFFFFF;
     border-radius: 0 4px 4px 0;
     appearance: textfield;
-    padding: 14px 87px 11px 17px;
+    padding: 14px 75px 11px 17px;
     margin-bottom: 23px;
+}
+
+.range-wrapper-inputs {
+    padding-top: 58px;
 }
 
 .range-input-before::-webkit-outer-spin-button,
@@ -878,8 +903,8 @@ body {
     line-height: 23px;
     color: #FFFFFF;
     opacity: 30%;
-    left: 848px;
-    bottom: 17px;
+    left: 114px;
+    bottom: 0px;
 }
 
 .range-input-from:hover {
@@ -922,8 +947,8 @@ body {
     line-height: 23px;
     color: #FFFFFF;
     opacity: 30%;
-    left: 1000px;
-    bottom: 17px;
+    left: 108px;
+    bottom: 0px;
 }
 
 .button-filter {
@@ -938,7 +963,7 @@ body {
     border: none;
     width: 160px;
     height: 48px;
-    margin-top: 0;
+    margin-top: 62px;
     margin-bottom: 20px;
     color: #ffffff;
     background-color: #83B3D3;
