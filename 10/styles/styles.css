@@ -619,6 +619,44 @@ body {
     fill: inherit;
 }
 
+.modal {
+    position: relative;
+    margin: auto;
+    padding: 68px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+
+
+.modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 53px;
+    height: 53px;
+    background-color: #ffffff;
+    border: none;
+    background-image: url("1401441-sedona-33/project/images/home_page/close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+} 
+
+.modal-auth {
+    width: 715px;
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.8);
+}
+
 /* catalog */
 .main-inner {
     color:#ffffff;
@@ -698,6 +736,7 @@ body {
     padding: 0px;
     margin: 0;
     border: none;
+    height: 235px;
 }
 
   /* Title */
@@ -707,13 +746,11 @@ body {
     font-weight: 700;
     color: #ffffff;
     padding: 0px;
-    
 }
 
 .catalog-filter-group {
-    margin-bottom: 66px;
     border: none;
-    padding-right: 68px;
+    padding-right: 80px;
 }
 
 .catalog-filter-list {
@@ -722,6 +759,7 @@ body {
     margin-bottom: 13px;
     margin-top: 32px;
 }
+
 
 .catalog-filter-item:not(:last-child) {
     margin-bottom: 13px;
@@ -798,12 +836,71 @@ body {
     content: "";
 }
 
-.custom-checkbox:checked+label::before {
-    background-color: #ffffff;
+  .checkbox {
+    margin-bottom: 0.2em;
+  }
+
+  /* для элемента input c type="checkbox" */
+  .custom-checkbox>input {
     position: absolute;
     z-index: -1;
     opacity: 0;
+  }
+
+  /* для элемента label, связанного с .custom-checkbox */
+  .custom-checkbox>span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  /* создание в label псевдоэлемента before со следующими стилями */
+  .custom-checkbox>span::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  /* стили при наведении курсора на checkbox */
+  .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+    border-color: #b3d7ff;
+  }
+
+  /* стили для активного чекбокса (при нажатии на него) */
+  .custom-checkbox>input:not(:disabled):active+span::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+
+  /* стили для чекбокса, находящегося в фокусе */
+  .custom-checkbox>input:focus+span::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  .custom-checkbox>input:focus:not(:checked)+span::before {
+    border-color: #80bdff;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .custom-checkbox>input:checked+span::before {
+    border-color: #ffffff;
+    background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  .custom-checkbox>input:disabled+span::before {
+    background-color: #e9ecef;
   }
 
 .range-scale {
@@ -884,7 +981,7 @@ body {
 }
 
 .range-wrapper-inputs {
-    padding-top: 58px;
+    padding-top: 34px;
 }
 
 .range-input-before::-webkit-outer-spin-button,
@@ -1038,6 +1135,7 @@ body {
     background-image: url("project\images\catalog\dropdown_2.svg");
     background-position: right 16px center;
     background-repeat: no-repeat;
+    appearance: none;
 }
 
 .select {
