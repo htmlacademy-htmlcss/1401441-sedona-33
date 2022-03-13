@@ -627,24 +627,21 @@ body {
     border-radius: 30px;
 }
 
-
 .modal-close-button {
     position: absolute;
     padding: 0;
-    top: 0;
-    right: 0;
-    width: 53px;
-    height: 53px;
+    top: 54px;
+    right: 70px;
     background-color: #ffffff;
     border: none;
-    background-image: url("1401441-sedona-33/project/images/home_page/close.svg");
-    background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    border-radius: 30px;
 } 
 
-.modal-auth {
+.modal-search {
     width: 715px;
+    padding: 0px;
 }
 
 .modal-container {
@@ -655,6 +652,96 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-title {
+    margin: 0;
+    margin-bottom: 63px;
+    font-family: "PT Sans";
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 62px 0 0 68px;
+}
+
+.search-form .field-group {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.search-form {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.form-description {
+    margin-right: 50px;
+}
+ 
+.date-form-field {
+    position:relative;
+    width: 420px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.date-link-arrival {
+    position:absolute;
+    left: 625px;
+    top: 180px;
+}
+
+.date-link-departure {
+    position:absolute;
+    left: 625px;
+    top: 310px;
+}
+
+.quantity-form-field {
+    position:relative;
+    width: 133px;
+    height: 50px;
+    border-radius: 4px;
+}
+
+.error {
+    color: #FF5757;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.warning {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.search-form-button {
+    width: 575px;
+    height: 60px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    background-color: #83B3D3;
+    border: none;
+}
+
+.quantity-form-field {
+    font-weight: 700;
+    font-size: 18px;
+    justify-content: center;
+    color: #000000;
+}
+
+.field {
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
 }
 
 /* catalog */
@@ -760,7 +847,6 @@ body {
     margin-top: 32px;
 }
 
-
 .catalog-filter-item:not(:last-child) {
     margin-bottom: 13px;
 }
@@ -773,7 +859,7 @@ body {
 .control {
     position: relative;
     display: block;
-    padding-left: 36px;
+    padding-left: 39px;
 }
  
 .catalog-filter-item:not(:last-child) {
@@ -836,26 +922,60 @@ body {
     content: "";
 }
 
-  .checkbox {
+.checkbox {
     margin-bottom: 0.2em;
-  }
+}
 
   /* для элемента input c type="checkbox" */
   .custom-checkbox>input {
     position: absolute;
     z-index: -1;
     opacity: 0;
-  }
+}
 
   /* для элемента label, связанного с .custom-checkbox */
-  .custom-checkbox>span {
+.custom-checkbox>span {
     display: inline-flex;
     align-items: center;
     user-select: none;
-  }
+}
 
-  /* создание в label псевдоэлемента before со следующими стилями */
-  .custom-checkbox>span::before {
+  /* стили при наведении курсора на checkbox */
+.custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
+    background: #FFFFFF;
+    opacity: 60%;
+}
+
+  /* стили для активного чекбокса (при нажатии на него) */
+  .custom-checkbox>input:not(:disabled):active+span::before {
+    background: #FFFFFF;
+    opacity: 30%;
+}
+
+  /* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox>input:focus+span::before {
+    outline: 3px solid #83B3D3;
+    border-radius: 5px;
+    background: #FFFFFF;
+    opacity: 30%;
+}
+
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox>input:focus:not(:checked)+span::before {
+    outline: 3px solid #83B3D3;
+    border-radius: 5px;
+    background: #FFFFFF;
+    opacity: 30%;
+}
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox>input:checked+span::before {
+    border-color: #ffffff;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 10'%3e%3cpath  d='M11 0L4.5 7.4L1.1 3.5L0 4.7L4.5 9.9L12.2 1.3L11 0Z'/%3e%3c/svg%3e");
+    fill: rgba(63, 94, 114, 1);
+    width: 12,2px;
+    Height: 9,9px;
     content: '';
     display: inline-block;
     width: 1em;
@@ -868,50 +988,12 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-  }
-
-  /* стили при наведении курсора на checkbox */
-  .custom-checkbox>input:not(:disabled):not(:checked)+span:hover::before {
-    background: #FFFFFF;
-    opacity: 60%;
-  }
-
-  /* стили для активного чекбокса (при нажатии на него) */
-  .custom-checkbox>input:not(:disabled):active+span::before {
-    background: #FFFFFF;
-    opacity: 30%;
-  }
-
-  /* стили для чекбокса, находящегося в фокусе */
-  .custom-checkbox>input:focus+span::before {
-    outline: 3px solid #83B3D3;
-    border-radius: 5px;
-    background: #FFFFFF;
-    opacity: 30%;
-  }
-
-  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
-  .custom-checkbox>input:focus:not(:checked)+span::before {
-    outline: 3px solid #83B3D3;
-    border-radius: 5px;
-    background: #FFFFFF;
-    opacity: 30%;
-  }
-
-  /* стили для чекбокса, находящегося в состоянии checked */
-  .custom-checkbox>input:checked+span::before {
-    border-color: #ffffff;
-    background-color: #ffffff;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath  d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
-    fill: rgba(63, 94, 114, 1);
-    width: 12,2px;
-    height: 9,9px;
-  }
+}
 
   /* стили для чекбокса, находящегося в состоянии disabled */
-  .custom-checkbox>input:disabled+span::before {
+.custom-checkbox>input:disabled+span::before {
     background-color: #e9ecef;
-  }
+}
 
 .range-scale {
     position: relative;
