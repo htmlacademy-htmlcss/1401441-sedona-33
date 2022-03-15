@@ -684,10 +684,42 @@ body {
 }
  
 .date-form-field {
-    position:relative;
-    width: 420px;
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    width: 382px;
     height: 50px;
     border-radius: 4px;
+    background-color: #F2F2F2;
+    border: none;
+    padding: 0 19px 0 19px;
+}
+
+.date-form-field::-webkit-search-cancel-button,
+::-webkit-clear-button {
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.3'%3e%3cpath d='M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z' fill='black'/%3e%3cpath d='M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z' fill='black'/%3e%3cpath d='M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z' fill='black'/%3e%3cpath d='M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z' fill='black'/%3e%3cpath d='M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z' fill='black'/%3e%3cpath d='M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z' fill='black'/%3e%3cpath d='M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z' fill='black'/%3e%3cpath d='M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z' fill='black'/%3e%3cpath d='M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z' fill='black'/%3e%3cpath d='M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z' fill='black'/%3e%3cpath d='M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z' fill='black'/%3e%3c/g%3e%3c/svg%3e");
+    color: rgba(0, 0, 0, 0.267);
+    cursor: pointer;
+    height: 15px;
+    margin-right: 0;
+    width: 15px;
+}
+
+.date-form-field::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0.103);
+    opacity: 1;
+    background-image: url("data:image/svg+xml,%3csvg width='15' height='15' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.3'%3e%3cpath d='M5.5 10C5.8 10 6 9.8 6 9.5C6 9.2 5.8 9 5.5 9C5.2 9 5 9.2 5 9.5C5 9.8 5.2 10 5.5 10Z' fill='black'/%3e%3cpath d='M14 2H12V0H11V2H4V0H3V2H1C0.4 2 0 2.4 0 3V6V7V14C0 14.5 0.4 15 1 15H14C14.5 15 15 14.5 15 14V7V6V3C15 2.4 14.5 2 14 2ZM14 14H1V7H14V14ZM1 6V3H3V5H4V3H11V5H12V3H14V6H1Z' fill='black'/%3e%3cpath d='M7.5 10C7.8 10 8 9.8 8 9.5C8 9.2 7.8 9 7.5 9C7.2 9 7 9.2 7 9.5C7 9.8 7.2 10 7.5 10Z' fill='black'/%3e%3cpath d='M9.5 10C9.8 10 10 9.8 10 9.5C10 9.2 9.8 9 9.5 9C9.2 9 9 9.2 9 9.5C9 9.8 9.2 10 9.5 10Z' fill='black'/%3e%3cpath d='M5.5 11C5.2 11 5 11.2 5 11.5C5 11.8 5.2 12 5.5 12C5.8 12 6 11.8 6 11.5C6 11.2 5.8 11 5.5 11Z' fill='black'/%3e%3cpath d='M3.5 10C3.8 10 4 9.8 4 9.5C4 9.2 3.8 9 3.5 9C3.2 9 3 9.2 3 9.5C3 9.8 3.2 10 3.5 10Z' fill='black'/%3e%3cpath d='M3.5 11C3.2 11 3 11.2 3 11.5C3 11.8 3.2 12 3.5 12C3.8 12 4 11.8 4 11.5C4 11.2 3.8 11 3.5 11Z' fill='black'/%3e%3cpath d='M7.5 11C7.2 11 7 11.2 7 11.5C7 11.8 7.2 12 7.5 12C7.8 12 8 11.8 8 11.5C8 11.2 7.8 11 7.5 11Z' fill='black'/%3e%3cpath d='M9.5 11C9.2 11 9 11.2 9 11.5C9 11.8 9.2 12 9.5 12C9.8 12 10 11.8 10 11.5C10 11.2 9.8 11 9.5 11Z' fill='black'/%3e%3cpath d='M11.5 10C11.8 10 12 9.8 12 9.5C12 9.2 11.8 9 11.5 9C11.2 9 11 9.2 11 9.5C11 9.8 11.2 10 11.5 10Z' fill='black'/%3e%3cpath d='M11.5 11C11.2 11 11 11.2 11 11.5C11 11.8 11.2 12 11.5 12C11.8 12 12 11.8 12 11.5C12 11.2 11.8 11 11.5 11Z' fill='black'/%3e%3c/g%3e%3c/svg%3e");
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: .5rem;
+}
+.date-form-field::-webkit-calendar-picker-indicator:hover {
+    -webkit-box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.04);
 }
 
 .date-link-arrival {
@@ -735,12 +767,6 @@ body {
     font-weight: 700;
     font-size: 18px;
     justify-content: center;
-    color: #000000;
-}
-
-.field {
-    font-weight: 700;
-    font-size: 18px;
     color: #000000;
 }
 
@@ -975,7 +1001,7 @@ body {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 10'%3e%3cpath  d='M11 0L4.5 7.4L1.1 3.5L0 4.7L4.5 9.9L12.2 1.3L11 0Z'/%3e%3c/svg%3e");
     fill: rgba(63, 94, 114, 1);
     width: 12,2px;
-    Height: 9,9px;
+    height: 9,9px;
     content: '';
     display: inline-block;
     width: 1em;
@@ -987,7 +1013,7 @@ body {
     margin-right: 0.5em;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 50% 50%;
+    background-size: 70% 70%;
 }
 
   /* стили для чекбокса, находящегося в состоянии disabled */
