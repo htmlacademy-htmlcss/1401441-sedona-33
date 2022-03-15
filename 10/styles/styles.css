@@ -668,7 +668,6 @@ body {
 
 .search-form .field-group {
     margin: 0;
-    margin-bottom: 40px;
 }
 
 .search-form {
@@ -682,6 +681,19 @@ body {
 .form-description {
     margin-right: 50px;
 }
+
+.departure {
+    padding-right: 11px;
+    padding-top: 11px;
+}
+
+.quantities {
+    padding-top: 11px;
+}
+
+.search-form-button {
+    margin: 40px 0 70px 0;
+}
  
 .date-form-field {
     font-family: 'PT Sans';
@@ -694,6 +706,27 @@ body {
     background-color: #F2F2F2;
     border: none;
     padding: 0 19px 0 19px;
+}
+
+.date-form-field:hover {
+    background-color: #E6E6E6;
+    color: rgb(0, 0, 0);
+    opacity: 60%;
+}
+
+.date-form-field:focus {
+    background-color: #E6E6E6;
+    color: rgb(0, 0, 0);
+    opacity: 60%;
+    outline: 3px solid #83B3D3;
+    border-radius: 4px;
+}
+
+.date-form-field:active {
+    background-color: #E6E6E6;
+    color: rgb(0, 0, 0);
+    outline: 2px solid #000000;
+    border-radius: 4px;
 }
 
 .date-form-field::-webkit-search-cancel-button,
@@ -735,7 +768,7 @@ body {
 }
 
 .quantity-form-field {
-    position:relative;
+    position: relative;
     width: 133px;
     height: 50px;
     border-radius: 4px;
@@ -746,12 +779,50 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
+    padding-left: 20px;
 }
 
 .warning {
     font-weight: 400;
     font-size: 16px;
     line-height: 40px;
+    padding-left: 70px;
+}
+
+.quantity-form-field {
+    font-weight: 700;
+    font-size: 18px;
+    justify-content: center;
+    color: #000000;
+    text-align: center;
+    padding: 0px;
+    position: relative;
+    border: none;
+    background-color: #F2F2F2;
+}
+
+.counter-plus-2 {
+    position: absolute;
+    right: 70px;
+    bottom: 184px;
+}
+
+.counter-plus-1 {
+    position: absolute;
+    right: 352px;
+    bottom: 184px;
+}
+
+.counter-minus-1 {
+    position: absolute;
+    right: 440px;
+    bottom: 184px;
+}
+
+.counter-minus-2 {
+    position: absolute;
+    right: 200px;
+    bottom: 184px;
 }
 
 .search-form-button {
@@ -763,12 +834,24 @@ body {
     border: none;
 }
 
-.quantity-form-field {
-    font-weight: 700;
-    font-size: 18px;
-    justify-content: center;
-    color: #000000;
+.search-form-button:hover {
+    background-color: #68A2CA;
+    border: none;
 }
+
+.search-form-button:focus {
+    outline: 3px solid #756257;
+    background-color: #68A2CA;
+    border-radius: 4px;
+}
+
+.search-form-button:active {
+    background-color: #68A2CA;
+    color: #FFFFFF;
+    opacity: 30%;
+    border: none;
+} 
+
 
 /* catalog */
 .main-inner {
