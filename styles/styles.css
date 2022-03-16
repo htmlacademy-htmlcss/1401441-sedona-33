@@ -698,6 +698,47 @@ body {
     margin-right: 50px;
 }
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 216px;
+    height: 110px;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 18px 18px 22px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -125px;
+    text-align: left;
+}
+  
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333333 transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
 .departure {
     padding-right: 5px;
     padding-top: 16px;
@@ -779,6 +820,10 @@ body {
     top: 310px;
 }
 
+.title-date {
+    margin-right: 50px;
+}
+
 .quantity-form-field {
     position: relative;
     width: 133px;
@@ -816,6 +861,7 @@ body {
     position: relative;
     border: none;
     background-color: #F2F2F2;
+    font-family: "PT Sans";
 }
 
 .adults-form {
@@ -861,10 +907,11 @@ body {
 .search-form-button {
     width: 575px;
     height: 60px;
-    border-radius: 1-px;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
     background-color: #83B3D3;
     border: none;
+    padding: 0px;
 }
 
 .search-form-button:hover {
