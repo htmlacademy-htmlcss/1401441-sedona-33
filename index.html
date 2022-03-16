@@ -237,30 +237,25 @@
       <section class="modal-content">
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="arrival">
-            <span class="form-description">Дата заезда:</span>
-            <label class="visually-hidden" for="arrival date">Дата заезда</label>
+          <div class="name-form">
+            <span class="form-description-entry">Дата заезда:</span>
             <div class="field-group">
               <input class="date-form-field" type="date" value="2020-07-27" id="arrival date" name="arrival date"
                 placeholder="27 апреля 2020">
               <span class="error">Мы не можем отправить вас в прошлое.</span>
             </div>
           </div>
-          <div class="departure">
-            <span class="form-description title-date">Дата выезда:</span>
-            <label class="visually-hidden" for="departure date">Дата выезда</label>
+          <div class="name-form">
+            <span class="form-description-exit">Дата выезда:</span>
             <div class="field-group">
-              <input class="date-form-field" type="date" value="2021-09-01" id="departure date" name="departure date"
+              <input class="date-form-field title-date" type="date" value="2021-09-01" id="departure date" name="departure date"
                 placeholder="1 сентября 2021">
               <span class="warning">На эти даты есть свободные номера. Пока есть.</span>
-              </a>
             </div>
           </div>
           <div class="quantities">
-            <p class="field-group">
+            <span class="quantities-form-description">Взрослые:</span>
             <div class="adults-form">
-              <span class="form-description">Взрослые:</span>
-              <label class="visually-hidden" for="quantity">Взрослые</label>
               <button class="counter-minus-1" type="button" href="#">
                 <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
@@ -277,13 +272,12 @@
               </button>
             </div>
             <div class="kids-form">
-              <span class="form-description">Дети:</span>
+              <span class="kids-form-description">Дети:</span>
               <button class="counter-minus-2" type="button" href="#">
                 <svg width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black" />
                 </svg>
               </button>
-              <label class="visually-hidden" for="quantity">Дети</label>
               <div class="tooltip">
                 <a class="tooltip-help">
                   <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -311,7 +305,6 @@
                 </svg>
                 </button>
             </div>
-            </p>
             <p class="field-group">
               <button class="button search-form-button" type="submit">Найти</button>
             </p>

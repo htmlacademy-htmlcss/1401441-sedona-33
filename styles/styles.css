@@ -690,13 +690,14 @@ body {
     font-weight: 700;
     margin: 0;
     padding-left: 54px;
-    width: 148px;
+    width: 715px;
 }
 
 .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
+    text-decoration: none;
 }
   
 .tooltip .tooltiptext {
@@ -718,6 +719,7 @@ body {
     margin-left: -125px;
     text-align: left;
     cursor: pointer;
+    text-decoration: none;
 }
   
 .tooltip .tooltiptext::after {
@@ -740,9 +742,6 @@ body {
     padding-top: 16px;
 }
 
-.search-form-button {
-    margin: 40px 0 70px 0;
-}
  
 .date-form-field {
     font-family: 'PT Sans';
@@ -816,34 +815,28 @@ body {
     top: 310px;
 }
 
-.quantity-form-field {
-    position: relative;
-    width: 133px;
-    height: 50px;
-    border-radius: 4px;
-}
-
 .error {
     color: #FF5757;
     font-weight: 400;
     font-size: 16px;
-    padding-left: 20px;
 }
 
 .warning {
     font-weight: 400;
     font-size: 16px;
-    padding-left: 65px;
+    padding-left: -3px;
 }
 
 .quantities {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 14px;
+    justify-content: flex-start;
 }
 
 .quantity-form-field {
+    width: 133px;
+    height: 50px;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 18px;
     justify-content: center;
@@ -860,12 +853,16 @@ body {
     position: relative;
 }
 
+.kids-form-description {
+    padding-right: 20px;
+}
+
 .counter-plus-1 {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 233px;
-    bottom: 16px;
+    left: 93px;
+    bottom: 14px;
     cursor: pointer;
 }
 
@@ -873,21 +870,22 @@ body {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 151px;
+    left: 12px;
     bottom: 21px;
     cursor: pointer;
 }
 
 .kids-form {
     position: relative;
+    padding-left: 54px;
 }
 
 .counter-plus-2 {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 200px;
-    bottom: 13px;
+    left: 253px;
+    bottom: 14px;
     cursor: pointer;
 }
 
@@ -895,21 +893,37 @@ body {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 110px;
+    left: 166px;
     bottom: 21px;
     cursor: pointer;
 }
 
-.arrival {
+.name-form {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    margin-bottom: 17px;
+    margin-left: 15px;
 }
 
-.departure {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.form-description-entry {
+    padding-right: 55px;
+    padding-top: 15px;
+}
+
+.form-description-exit {
+    padding-right: 52px;
+    padding-top: 15px;
+}
+
+.title-date {
+    padding-right: 19px;
+}
+
+.quantities-form-description {
+    padding-left: 16px;
+    padding-right: 74px;
+    padding-top: 14px;
 }
 
 .field-group {
@@ -927,6 +941,9 @@ body {
     background-color: #83B3D3;
     border: none;
     padding: 0px;
+    margin-left: 17px;
+    margin-top: 18px;
+    margin-bottom: 50px;
 }
 
 .search-form-button:hover {
