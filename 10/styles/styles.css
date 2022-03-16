@@ -637,7 +637,23 @@ body {
     background-position: center;
     cursor: pointer;
     border-radius: 30px;
+    height: 53px;
 } 
+
+.modal-close-button:hover {
+    fill: #E6E6E6;
+}
+
+.modal-close-button:focus {
+    outline: 3px solid #83B3D3;
+    background-color: #E6E6E6;
+}
+
+.modal-close-button:active {
+    background-color: #E6E6E6;
+    outline: none;
+    fill-opacity: 30%;
+}
 
 .modal-search {
     width: 715px;
@@ -656,7 +672,7 @@ body {
 
 .modal-title {
     margin: 0;
-    margin-bottom: 63px;
+    margin-bottom: 58px;
     font-family: "PT Sans";
     font-size: 30px;
     line-height: 40px;
@@ -682,13 +698,50 @@ body {
     margin-right: 50px;
 }
 
-.departure {
-    padding-right: 11px;
-    padding-top: 11px;
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 216px;
+    height: 110px;
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px 18px 18px 22px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -125px;
+    text-align: left;
+}
+  
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    bottom: 100%;  
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333333 transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
 }
 
-.quantities {
-    padding-top: 11px;
+.departure {
+    padding-right: 5px;
+    padding-top: 16px;
 }
 
 .search-form-button {
@@ -767,6 +820,10 @@ body {
     top: 310px;
 }
 
+.title-date {
+    margin-right: 50px;
+}
+
 .quantity-form-field {
     position: relative;
     width: 133px;
@@ -778,15 +835,20 @@ body {
     color: #FF5757;
     font-weight: 400;
     font-size: 16px;
-    line-height: 40px;
     padding-left: 20px;
 }
 
 .warning {
     font-weight: 400;
     font-size: 16px;
-    line-height: 40px;
-    padding-left: 70px;
+    padding-left: 65px;
+}
+
+.quantities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 14px;
 }
 
 .quantity-form-field {
@@ -799,39 +861,57 @@ body {
     position: relative;
     border: none;
     background-color: #F2F2F2;
+    font-family: "PT Sans";
 }
 
-.counter-plus-2 {
-    position: absolute;
-    right: 70px;
-    bottom: 184px;
+.adults-form {
+    position: relative;
 }
 
 .counter-plus-1 {
     position: absolute;
-    right: 352px;
-    bottom: 184px;
+    z-index: 1;
+    border: none;
+    left: 233px;
+    bottom: 16px;
 }
 
 .counter-minus-1 {
     position: absolute;
-    right: 440px;
-    bottom: 184px;
+    z-index: 1;
+    border: none;
+    left: 151px;
+    bottom: 21px;
+}
+
+.kids-form {
+    position: relative;
+}
+
+.counter-plus-2 {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    left: 200px;
+    bottom: 13px;
 }
 
 .counter-minus-2 {
     position: absolute;
-    right: 200px;
-    bottom: 184px;
+    z-index: 1;
+    border: none;
+    left: 110px;
+    bottom: 21px;
 }
 
 .search-form-button {
     width: 575px;
     height: 60px;
-    border-radius: 4px;
+    border-radius: 10px;
     color: rgb(255, 255, 255);
     background-color: #83B3D3;
     border: none;
+    padding: 0px;
 }
 
 .search-form-button:hover {
@@ -842,16 +922,15 @@ body {
 .search-form-button:focus {
     outline: 3px solid #756257;
     background-color: #68A2CA;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .search-form-button:active {
     background-color: #68A2CA;
     color: #FFFFFF;
     opacity: 30%;
-    border: none;
+    outline: none;
 } 
-
 
 /* catalog */
 .main-inner {
@@ -1284,6 +1363,7 @@ body {
 .button-apply:active {
     color: rgba(255, 255, 255, 0.76);
     background-color: #68A2CA;
+    outline: none;
 }
 
 /* Light */
