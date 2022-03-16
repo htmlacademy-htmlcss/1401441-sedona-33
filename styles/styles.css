@@ -696,7 +696,6 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     text-decoration: none;
 }
   
@@ -718,7 +717,6 @@ body {
     left: 50%;
     margin-left: -125px;
     text-align: left;
-    cursor: pointer;
     text-decoration: none;
 }
   
@@ -737,12 +735,17 @@ body {
     visibility: visible;
 }
 
+.tooltip-help {
+    display: flex;
+    cursor: pointer;
+    padding-right: 14px;
+}
+
 .departure {
     padding-right: 5px;
     padding-top: 16px;
 }
 
- 
 .date-form-field {
     font-family: 'PT Sans';
     font-weight: 700;
@@ -849,12 +852,28 @@ body {
     font-family: "PT Sans";
 }
 
+.quantity-form-field:hover {
+    border: none;
+}
+
+.quantity-form-field:focus {
+    border: none;
+}
+
+.quantity-form-field:active {
+    border: none;
+}
+
+.quantity-form-field:focus-visible {
+    border: none;
+}
+
 .adults-form {
     position: relative;
 }
 
 .kids-form-description {
-    padding-right: 20px;
+    padding-right: 7px;
 }
 
 .counter-plus-1 {
@@ -876,6 +895,8 @@ body {
 }
 
 .kids-form {
+    display: flex;
+    align-items: center;
     position: relative;
     padding-left: 54px;
 }
