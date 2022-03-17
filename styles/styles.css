@@ -901,6 +901,7 @@ body {
 
 .counter-plus-2:hover {
     fill: #000000;
+    cursor: pointer;
 }
 
 .counter-plus-2:focus {
@@ -912,6 +913,7 @@ body {
 
 .counter-plus-1:hover {
     fill: #000000;
+    cursor: pointer;
 }
 
 .counter-plus-1:focus {
@@ -923,6 +925,7 @@ body {
 
 .counter-minus-1:hover {
     fill: #000000;
+    cursor: pointer;
 }
 
 .counter-minus-1:focus {
@@ -933,8 +936,14 @@ body {
     background-position: center;
 }
 
-.counter-minus-2:hover {
+.counter-minus-2 .button-icon-minus:hover  {
     fill: #000000;
+    cursor: pointer;
+}
+
+.button-icon-minus  {
+    fill: #000000;
+    opacity: 30%;
 }
 
 .counter-minus-2:focus {
