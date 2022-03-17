@@ -696,7 +696,6 @@ body {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
     text-decoration: none;
 }
   
@@ -718,7 +717,6 @@ body {
     left: 50%;
     margin-left: -125px;
     text-align: left;
-    cursor: pointer;
     text-decoration: none;
 }
   
@@ -737,12 +735,17 @@ body {
     visibility: visible;
 }
 
+.tooltip-help {
+    display: flex;
+    cursor: pointer;
+    padding-right: 18px;
+}
+
 .departure {
     padding-right: 5px;
     padding-top: 16px;
 }
 
- 
 .date-form-field {
     font-family: 'PT Sans';
     font-weight: 700;
@@ -849,12 +852,24 @@ body {
     font-family: "PT Sans";
 }
 
-.adults-form {
-    position: relative;
+.quantity-form-field:hover {
+    border: none;
 }
 
-.kids-form-description {
-    padding-right: 20px;
+.quantity-form-field:focus {
+    border: none;
+}
+
+.quantity-form-field:active {
+    border: none;
+}
+
+.quantity-form-field:focus-visible {
+    border: none;
+}
+
+.adults-form {
+    position: relative;
 }
 
 .counter-plus-1 {
@@ -876,16 +891,25 @@ body {
 }
 
 .kids-form {
+    display: flex;
+    align-items: center;
     position: relative;
-    padding-left: 54px;
+    padding-left: 10px;
+}
+
+.kids-quantities {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
 }
 
 .counter-plus-2 {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 253px;
-    bottom: 14px;
+    left: 148px;
+    bottom: 15px;
     cursor: pointer;
 }
 
@@ -893,8 +917,8 @@ body {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 166px;
-    bottom: 21px;
+    left: 66px;
+    bottom: 22px;
     cursor: pointer;
 }
 
@@ -907,7 +931,7 @@ body {
 }
 
 .form-description-entry {
-    padding-right: 55px;
+    padding-right: 56px;
     padding-top: 15px;
 }
 
@@ -941,7 +965,7 @@ body {
     background-color: #83B3D3;
     border: none;
     padding: 0px;
-    margin-left: 17px;
+    margin-left: 15px;
     margin-top: 18px;
     margin-bottom: 50px;
 }
