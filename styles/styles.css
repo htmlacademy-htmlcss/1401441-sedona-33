@@ -892,7 +892,7 @@ body {
     z-index: 1;
     border: none;
     left: 148px;
-    bottom: 15px;
+    bottom: 12px;
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -936,7 +936,7 @@ body {
     background-position: center;
 }
 
-.counter-minus-2 .button-icon-minus:hover  {
+.button-icon-minus:hover  {
     fill: #000000;
     cursor: pointer;
 }
@@ -958,7 +958,7 @@ body {
     z-index: 1;
     border: none;
     left: 93px;
-    bottom: 14px;
+    bottom: 12px;
     cursor: pointer;
     width: 25px;
     height: 25px;
@@ -971,7 +971,7 @@ body {
     z-index: 1;
     border: none;
     left: 12px;
-    bottom: 21px;
+    bottom: 17px;
     cursor: pointer;
     background-position: center;
     width: 25px;
@@ -984,7 +984,7 @@ body {
     z-index: 1;
     border: none;
     left: 66px;
-    bottom: 22px;
+    bottom: 17px;
     cursor: pointer;
     background-position: center;
     width: 25px;
