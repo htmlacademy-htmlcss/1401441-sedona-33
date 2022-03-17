@@ -738,7 +738,7 @@ body {
 .tooltip-help {
     display: flex;
     cursor: pointer;
-    padding-right: 14px;
+    padding-right: 18px;
 }
 
 .departure {
@@ -872,10 +872,6 @@ body {
     position: relative;
 }
 
-.kids-form-description {
-    padding-right: 7px;
-}
-
 .counter-plus-1 {
     position: absolute;
     z-index: 1;
@@ -898,15 +894,22 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    padding-left: 54px;
+    padding-left: 10px;
+}
+
+.kids-quantities {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
 }
 
 .counter-plus-2 {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 253px;
-    bottom: 14px;
+    left: 148px;
+    bottom: 15px;
     cursor: pointer;
 }
 
@@ -914,8 +917,8 @@ body {
     position: absolute;
     z-index: 1;
     border: none;
-    left: 166px;
-    bottom: 21px;
+    left: 66px;
+    bottom: 22px;
     cursor: pointer;
 }
 
@@ -928,7 +931,7 @@ body {
 }
 
 .form-description-entry {
-    padding-right: 55px;
+    padding-right: 56px;
     padding-top: 15px;
 }
 
@@ -962,7 +965,7 @@ body {
     background-color: #83B3D3;
     border: none;
     padding: 0px;
-    margin-left: 17px;
+    margin-left: 15px;
     margin-top: 18px;
     margin-bottom: 50px;
 }
