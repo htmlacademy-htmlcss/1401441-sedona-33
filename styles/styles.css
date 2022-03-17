@@ -653,6 +653,7 @@ body {
     background-color: #E6E6E6;
     outline: none;
     fill-opacity: 30%;
+    fill: inherit;
 }
 
 .modal-search {
@@ -872,24 +873,6 @@ body {
     position: relative;
 }
 
-.counter-plus-1 {
-    position: absolute;
-    z-index: 1;
-    border: none;
-    left: 93px;
-    bottom: 14px;
-    cursor: pointer;
-}
-
-.counter-minus-1 {
-    position: absolute;
-    z-index: 1;
-    border: none;
-    left: 12px;
-    bottom: 21px;
-    cursor: pointer;
-}
-
 .kids-form {
     display: flex;
     align-items: center;
@@ -911,6 +894,80 @@ body {
     left: 148px;
     bottom: 15px;
     cursor: pointer;
+    width: 25px;
+    height: 25px;
+    fill: inherit;
+}
+
+.counter-plus-2:hover {
+    fill: #000000;
+}
+
+.counter-plus-2:focus {
+    outline: 3px solid #68A2CA;
+    outline-offset: 5px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
+.counter-plus-1:hover {
+    fill: #000000;
+}
+
+.counter-plus-1:focus {
+    outline: 3px solid #68A2CA;
+    outline-offset: 5px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
+.counter-minus-1:hover {
+    fill: #000000;
+}
+
+.counter-minus-1:focus {
+    outline: 3px solid #68A2CA;
+    outline-offset: 5px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+    background-position: center;
+}
+
+.counter-minus-2:hover {
+    fill: #000000;
+}
+
+.counter-minus-2:focus {
+    outline: 3px solid #68A2CA;
+    outline-offset: 5px;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
+.counter-plus-1 {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    left: 93px;
+    bottom: 14px;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-position: center;
+    fill: inherit;
+}
+
+.counter-minus-1 {
+    position: absolute;
+    z-index: 1;
+    border: none;
+    left: 12px;
+    bottom: 21px;
+    cursor: pointer;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    fill: inherit;
 }
 
 .counter-minus-2 {
@@ -920,6 +977,10 @@ body {
     left: 66px;
     bottom: 22px;
     cursor: pointer;
+    background-position: center;
+    width: 25px;
+    height: 25px;
+    fill: inherit;
 }
 
 .name-form {
