@@ -51,7 +51,7 @@ body {
 
 .main-container {
   flex-grow: 1;
-  padding: 40px 0;
+  padding: 51px 0;
 }
 
 .button {
@@ -281,6 +281,7 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin-bottom: 0px;
 }
 
 .advantages-description {
@@ -296,7 +297,7 @@ body {
 
 .blue-block {
   box-sizing: border-box;
-  padding: 97px 90px 87px;
+  padding: 86px 90px 87px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,7 +308,7 @@ body {
 
 .block-gray {
   box-sizing: border-box;
-  padding: 85px 75px 79px;
+  padding: 56px 75px 79px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -327,7 +328,7 @@ body {
 
 .block-white {
   box-sizing: border-box;
-  padding: 85px 75px 79px;
+  padding: 94px 75px 79px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -337,7 +338,18 @@ body {
 
 .block-light-blue {
   box-sizing: border-box;
-  padding: 98px 75px 108px;
+  padding: 84px 75px 108px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 400px;
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.block-light-blue-logo {
+  box-sizing: border-box;
+  padding: 122px 75px 108px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -365,7 +377,7 @@ body {
 }
 
 .search-description {
-  padding: 0 240px 56px;
+  padding: 0 240px 55px;
   margin: 0;
   text-align: center;
   font-size: 22px;
@@ -374,7 +386,7 @@ body {
 
 .search-button {
   display: inline-block;
-  padding: 10px 150px;
+  padding: 12px 150px;
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -403,6 +415,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 63px;
 }
 
 .newsletter-description {
@@ -411,6 +424,7 @@ body {
   padding: 0 360px;
   color: #ffffff;
   text-transform: none;
+  padding-top: 4px;
 }
 
 .newsletter-form {
@@ -441,7 +455,8 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-.field:invalid {
+
+.discrepancy {
   outline: 2px solid #ff5757;
   background-color: #e6e6e6;
   border-radius: 10px 0px 0px 10px;
@@ -671,6 +686,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal-title {
@@ -1363,7 +1382,7 @@ body {
 }
 
 .range-input-from {
-  width: 30px;
+  width: 60px;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -1371,7 +1390,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
   appearance: textfield;
-  padding: 14px 92px 11px 19px;
+  padding: 14px 64px 11px 19px;
   margin-bottom: 23px;
   margin-right: -6px;
 }
@@ -1952,6 +1971,7 @@ body {
   color: #333333;
   position: relative;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-control-choose-navigation {
