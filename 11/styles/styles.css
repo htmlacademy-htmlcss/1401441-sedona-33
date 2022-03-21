@@ -455,13 +455,8 @@ body {
   border-radius: 10px 0px 0px 10px;
 }
 
-.field:invalid {
-  outline: none;
-  background-color: #e6e6e6;
-  border-radius: 10px 0px 0px 10px;
-}
 
-.field:not(:placeholder-shown):invalid {
+.discrepancy {
   outline: 2px solid #ff5757;
   background-color: #e6e6e6;
   border-radius: 10px 0px 0px 10px;
@@ -1387,7 +1382,7 @@ body {
 }
 
 .range-input-from {
-  width: 30px;
+  width: 60px;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
@@ -1395,7 +1390,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 4px 0 0 4px;
   appearance: textfield;
-  padding: 14px 92px 11px 19px;
+  padding: 14px 64px 11px 19px;
   margin-bottom: 23px;
   margin-right: -6px;
 }
@@ -1976,6 +1971,7 @@ body {
   color: #333333;
   position: relative;
   appearance: none;
+  cursor: pointer;
 }
 
 .select-control-choose-navigation {
