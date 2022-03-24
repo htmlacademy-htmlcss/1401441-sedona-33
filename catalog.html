@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Каталог</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../1401441-sedona-33/project/images/home_page/favicon.png">
 </head>
 
 <body>
@@ -87,7 +89,7 @@
       <form class="catalog-filter">
         <fieldset class="catalog-filter-mark">
           <div class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
+            <h3 class="catalog-filter-title">Инфраструктура:</h3>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item checkbox">
                 <label class="control custom-checkbox">
@@ -112,7 +114,7 @@
             </ul>
           </div>
           <div class="catalog-filter-group">
-            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <h3 class="catalog-filter-title">Тип жилья:</h3>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
@@ -124,14 +126,14 @@
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="motel" value="shaving-supplies">
+                  <input class="visually-hidden control-input" type="radio" name="hotel" value="shaving-supplies">
                   <span class="control-mark"></span>
                   <span class="control-label">Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="visually-hidden control-input" type="radio" name="apartament" value="shaving-supplies">
+                  <input class="visually-hidden control-input" type="radio" name="hotel" value="shaving-supplies">
                   <span class="control-mark"></span>
                   <span class="control-label">Апартаменты</span>
                 </label>
@@ -141,7 +143,7 @@
         </fieldset>
         <fieldset class="catalog-filter-mark">
           <div class="catalog-filter-group">
-            <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+            <h3 class="catalog-filter-title">Стоимость, ₽:</h3>
             <div class="range">
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
@@ -174,6 +176,7 @@
       <div class="catalog-hotel">
         <div class="hotels-sorting">
           <h2 class="inner-header-title">Найдено гостиниц:<span>&nbsp;38</span></h2>
+          <div class="select">
             <select class="select-control" aria-label="Сортировка">
               <option value="cheap-select">Сначала дешёвые</option>
               <option value="popular">Сначала популярные</option>
@@ -189,27 +192,29 @@
               </clipPath>
               </defs>
             </svg>
-          <a href="#" class="card-grid-toggle-current">
-            <span class="visually-hidden">Показать карточки</span>
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          </div>
+          <div class="toggle">
+            <a href="#" class="card-grid-toggle-current">
+              <span class="visually-hidden">Показать карточки</span>
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M4 0H0V6H4V0Z" fill="black" />
               <path d="M16 0H12V6H16V0Z" fill="black" />
               <path d="M10 0H6V6H10V0Z" fill="black" />
               <path d="M4 8H0V14H4V8Z" fill="black" />
               <path d="M16 8H12V14H16V8Z" fill="black" />
               <path d="M10 8H6V14H10V8Z" fill="black" />
-            </svg>
-          </a>
-          <a class="card-grid-toggle" href="#" type="button">
-            <span class="visually-hidden">Показать на всю страницу</span>
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+            </a>
+            <a class="card-grid-toggle" href="#">
+              <span class="visually-hidden">Показать на всю страницу</span>
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M16 12H0V14H16V12Z" fill="black" />
               <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-            </svg>
-          </a>
-          <a class="card-grid-toggle" href="#" type="button">
-            <span class="visually-hidden">Показать список</span>
-            <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </svg>
+            </a>
+            <a class="card-grid-toggle" href="#">
+              <span class="visually-hidden">Показать список</span>
+              <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M2 0H0V2H2V0Z" fill="black" />
               <path d="M16 0H4V2H16V0Z" fill="black" />
               <path d="M2 4H0V6H2V4Z" fill="black" />
@@ -218,14 +223,15 @@
               <path d="M16 8H4V10H16V8Z" fill="black" />
               <path d="M2 12H0V14H2V12Z" fill="black" />
               <path d="M16 12H4V14H16V12Z" fill="black" />
-            </svg>
-          </a>
+              </svg>
+            </a>
+          </div>          
         </div>
         <div class="hotels">
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-image-link" href="product.html">
-                <img class="product-card-image" src="project/images/catalog/hotel-1.jpg" alt="hotel view" >
+                <img class="product-card-image" src="project/images/catalog/hotel-1.jpg" alt="hotel view" width="300"  height="206">
               </a>
               <h3 class="product-card-title">Amara Resort & Spa</h3>
               <span class="product-card-type">Гостиница</span>
@@ -254,7 +260,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-image-link" href="product.html">
-                <img class="product-card-image" src="project/images/catalog/hotel-2.jpg" alt="hotel view">
+                <img class="product-card-image" src="project/images/catalog/hotel-2.jpg" alt="hotel view" width="300"  height="206">
               </a>
               <h3 class="product-card-title">Desert Quail Inn</h3>
               <span class="product-card-type">Гостиница</span>
@@ -279,13 +285,13 @@
             </li>
             <li class="product-card">
               <a class="product-card-image-link" href="product.html">
-                <img class="product-card-image" src="project/images/catalog/hotel-3.jpg" alt="hotel view">
+                <img class="product-card-image" src="project/images/catalog/hotel-3.jpg" alt="hotel view" width="300"  height="206" >
               </a>
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
               <span class="product-card-type">Гостиница</span>
               <b class="product-card-price">от&nbsp;2000&nbsp;₽</b>
               <a class="product-card-button product-card-more button" href="#">Подробнее</a>
-              <a class="product-card-button product-card-favourite-active button">В избранное</a>
+              <a class="product-card-button product-card-favourite-active button">В избранном</a>
               <div class="product-card product-card-stars">
                 <svg class="stars" width="18" height="17" viewBox="0 0 18 17" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -300,7 +306,7 @@
             </li>
             <li class="product-card">
               <a class="product-card-image-link" href="product.html">
-                <img class="product-card-image" src="project/images/catalog/hotel-4.jpg" alt="hotel view">
+                <img class="product-card-image" src="project/images/catalog/hotel-4.jpg" alt="hotel view" width="300"  height="206">
               </a>
               <h3 class="product-card-title">GreenTree Inn</h3>
               <span class="product-card-type">Гостиница</span>
@@ -344,22 +350,14 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
-          <span class="select-control-description">Гостиниц на странице:</span>
-          <select class="select-control-choose" aria-label="Сортировка">
-            <option>4</option>
-            <option>6</option>
-            <option>8</option>
-          </select>
-          <svg class="select-control-choose-navigation" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g opacity="0.3" clip-path="url(#clip0_73_520)">
-            <path d="M6.6 6.69998L11.7 1.39998C12 1.09998 12 0.499976 11.7 0.199976C11.4 -0.100024 10.8 -0.100024 10.5 0.199976L6 4.89998L1.5 0.199976C1.2 -0.100024 0.6 -0.100024 0.3 0.199976C0.1 0.299976 0 0.599976 0 0.799976C0 0.999976 0.1 1.19998 0.3 1.39998L5.4 6.69998C5.7 7.09998 6.3 7.09998 6.6 6.69998Z" fill="black"/>
-            </g>
-            <defs>
-            <clipPath id="clip0_73_520">
-            <rect width="12" height="7" fill="white"/>
-            </clipPath>
-            </defs>
-          </svg>
+          <div class="select-choose">
+            <span class="select-control-description">Гостиниц на странице:</span>
+            <select class="select-control-choose" aria-label="Сортировка">
+              <option>4</option>
+              <option>6</option>
+              <option>8</option>
+            </select>
+          </div>
         </div>
       </div>
     </section>
@@ -374,7 +372,7 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div ection class="footer-social">
+    <div class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">

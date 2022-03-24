@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -10,15 +10,15 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("..fonts/pt-sans-bold.woff2") format("woff2");
   font-display: swap;
 }
 
 @font-face {
   font-family: "PT Sans";
-  font-style: bold;
+  font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-italic.woff2") format("woff2");
+  src: url("..fonts/pt-sans-italic.woff2") format("woff2");
 }
 
 html {
@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 24px;
   color: #242424;
@@ -93,6 +93,7 @@ body {
   width: 1060px;
   height: 64px;
   margin: 0 auto;
+  max-height: 66px;
 }
 
 .navigation-link:hover {
@@ -120,13 +121,13 @@ body {
 }
 
 .navigation-link:active .navigation-icon {
-  color: rgba(117, 98, 87, 0.3) 7;
+  color: rgba(117, 98, 87, 0.3);
   opacity: 30%;
   background-color: #ffffff;
 }
 
 .navigation-link:active {
-  color: rgba(117, 98, 87, 0.3) 7;
+  color: rgba(117, 98, 87, 0.3);
   opacity: 30%;
   background-color: #ffffff;
 }
@@ -206,7 +207,7 @@ body {
 .booking-item-button {
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 30px;
+  padding: 9px 26px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -235,6 +236,7 @@ body {
   background-image: url(../project/images/home_page/index-background.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .welcome-logo {
@@ -390,7 +392,6 @@ body {
   border-radius: 10px;
   border: none;
   cursor: pointer;
-  outline: none;
 }
 
 .newsletter {
@@ -440,6 +441,7 @@ body {
   width: 580px;
   height: 60px;
   border-radius: 10px 0px 0px 10px;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   padding-right: 0px;
@@ -454,7 +456,6 @@ body {
   background-color: #e6e6e6;
   border-radius: 10px 0px 0px 10px;
 }
-
 
 .discrepancy {
   outline: 2px solid #ff5757;
@@ -503,7 +504,7 @@ body {
 .footer-contacts {
   height: 100%;
   width: 720px;
-  margin-right: 31px;
+  margin-right: 11px;
   text-align: center;
 }
 
@@ -542,7 +543,6 @@ body {
 }
 
 .footer-social-link:active {
-  outline: none;
   color: rgba(104, 162, 202, 1);
 }
 
@@ -605,7 +605,6 @@ body {
 }
 
 .contacts-phone:active {
-  outline: none;
   fill: #756257;
   opacity: 30%;
 }
@@ -627,9 +626,8 @@ body {
 }
 
 .footer-logo svg:active {
-  outline: none;
   fill: #756257;
-  opacity: 30%;
+  fill-opacity: 30%;
 }
 
 .footer-logo path {
@@ -668,7 +666,6 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  outline: none;
   fill-opacity: 30%;
   fill: inherit;
 }
@@ -850,7 +847,7 @@ body {
 .warning {
   font-weight: 400;
   font-size: 16px;
-  padding-left: -3px;
+  padding-left: 0;
 }
 
 .quantities {
@@ -1080,7 +1077,6 @@ body {
   background-color: #68a2ca;
   color: #ffffff;
   opacity: 30%;
-  outline: none;
 }
 
 /* catalog */
@@ -1090,6 +1086,7 @@ body {
   background-image: url(../project/images/catalog/catalog-background-1.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+  padding-bottom: 41px;
 }
 
 .current {
@@ -1100,9 +1097,9 @@ body {
   margin-top: 0;
   margin-bottom: 20px;
   color: #ffffff;
-  padding: 25px 0 0 71px;
+  padding: 11px 0 0 71px;
   font-size: 60px;
-  line-height: 78x;
+  max-width: 528px;
 }
 
 /* Breadcrumbs */
@@ -1111,7 +1108,8 @@ body {
   line-height: 21px;
   padding: 0 71px;
   color: #ffffff;
-  margin: 0 11px 45px 0;
+  margin: 0 11px 27px 0;
+  flex-wrap: wrap;
 }
 
 .breadcrumbs-item:hover {
@@ -1128,11 +1126,10 @@ body {
 
 .breadcrumbs-item:active {
   color: rgba(242, 242, 242, 0.308);
-  outline: none;
 }
 
 .breadcrumbs-link {
-  margin: 0 0 0 10px;
+  margin: 0 0 0 5px;
   padding: 0;
 }
 
@@ -1148,10 +1145,10 @@ body {
 
 .catalog-filter {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 43px;
   display: flex;
   width: 1058px;
-  padding: 0 71px;
+  padding: 0 69px;
   justify-content: space-between;
   align-items: center;
 }
@@ -1310,8 +1307,8 @@ body {
   background-color: #ffffff;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 13 10'%3e%3cpath  d='M11 0L4.5 7.4L1.1 3.5L0 4.7L4.5 9.9L12.2 1.3L11 0Z'/%3e%3c/svg%3e");
   fill: rgba(63, 94, 114, 1);
-  width: 12, 2px;
-  height: 9, 9px;
+  width: 12px;
+  height: 10px;
   content: "";
   display: inline-block;
   width: 1em;
@@ -1409,7 +1406,7 @@ body {
 }
 
 .range-wrapper-inputs {
-  padding-top: 34px;
+  padding-top: 15px;
   padding-bottom: 3px;
 }
 
@@ -1489,7 +1486,7 @@ body {
   border: none;
   width: 160px;
   height: 48px;
-  margin-top: 62px;
+  margin-top: 80px;
   margin-bottom: 20px;
   color: #ffffff;
   background-color: #83b3d3;
@@ -1512,7 +1509,6 @@ body {
 .button-apply:active {
   color: rgba(255, 255, 255, 0.76);
   background-color: #68a2ca;
-  outline: none;
 }
 
 /* Light */
@@ -1538,7 +1534,6 @@ body {
 }
 
 .button-reset:active {
-  outline: none;
   opacity: 30%;
 }
 
@@ -1563,16 +1558,28 @@ body {
   background-position: right 16px center;
   background-repeat: no-repeat;
   appearance: none;
-  padding-left: 17px;
+  padding-left: 15px;
+}
+
+.select {
+  margin: 4px 0 5px 193px;
   position: relative;
-  margin: 0 73px 5px 193px;
+  max-width: 500px;
 }
 
 .select-control-navigation {
   position: absolute;
-  width: 1578px;
+  width: 520px;
+  top: 22px;
 }
 
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 73px;
+  margin-top: 4px;
+}
 .select-control:hover {
   border-color: #83b3d3;
   border-radius: 4px;
@@ -1601,6 +1608,7 @@ body {
   outline: 2px solid #e6e6e6;
   border-radius: 4px;
   margin-bottom: 5px;
+  flex-wrap: wrap;
 }
 
 .card-grid-toggle:hover {
@@ -1712,6 +1720,7 @@ body {
   grid-area: title;
   font-size: 24px;
   line-height: 31px;
+  max-width: 300px;
 }
 
 /* Type */
@@ -1724,6 +1733,7 @@ body {
   color: #333333;
   text-transform: capitalize;
   grid-area: type;
+  max-width: 133px;
 }
 
 .product-card-more {
@@ -1733,6 +1743,8 @@ body {
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
+  max-width: 134px;
+  max-height: 37px;
 }
 
 .product-card-more:hover {
@@ -1749,7 +1761,6 @@ body {
 .product-card-more:active {
   color: rgba(255, 255, 255, 0.76);
   background-color: #615048;
-  outline: none;
 }
 
 .product-card-price {
@@ -1759,6 +1770,7 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: capitalize;
+  max-width: 143px;
 }
 
 .product-card-favourite {
@@ -1770,6 +1782,8 @@ body {
   padding-top: 8px;
   padding-bottom: 24px;
   margin-top: -7px;
+  max-width: 141px;
+  max-height: 37px;
 }
 
 .product-card-favourite-active {
@@ -1834,6 +1848,8 @@ body {
   margin-left: 7px;
   padding-top: 10px;
   padding-bottom: 30px;
+  max-width: 160px;
+  max-height: 20px;
 }
 
 .product-card-stars {
@@ -1890,7 +1906,6 @@ body {
 }
 
 .pagination-show-more:active {
-  outline: none;
   color: rgba(255, 255, 255, 0.76);
   background-color: #68a2ca;
 }
@@ -1903,10 +1918,11 @@ body {
 
 .pagination-numbering {
   display: flex;
-  margin-top: 20px;
+  margin-top: 23px;
   padding: 0;
   list-style-type: none;
   background-color: #ffffff;
+  max-width: 371px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1926,6 +1942,8 @@ body {
   line-height: 26px;
   font-weight: 700;
   border-radius: 4px;
+  min-width: 55px;
+  min-height: 55px;
 }
 
 .pagination-current {
@@ -1945,13 +1963,18 @@ body {
 }
 
 .pagination-link:active {
-  outline: none;
   color: rgba(255, 255, 255, 0.76);
   background-color: #68a2ca;
 }
 
-.select-control-description {
+.select-choose {
+  display: flex;
+  align-items: center;
   margin-left: 300px;
+  max-width: 386px;
+}
+
+.select-control-description {
   color: #000000;
   background-color: #ffffff;
   font-size: 18px;
@@ -1969,13 +1992,16 @@ body {
   line-height: 23px;
   font-weight: 400;
   color: #333333;
-  position: relative;
   appearance: none;
   cursor: pointer;
+  position: relative;
+  background-image: url(../../1401441-sedona-33/project/images/catalog/dropdown_2.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .select-control-choose-navigation {
-  width: 2060px;
+  width: 150px;
   position: absolute;
 }
 
