@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src:  url("../fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -441,6 +441,7 @@ body {
   width: 580px;
   height: 60px;
   border-radius: 10px 0px 0px 10px;
+  font-family: "PT Sans";
   font-size: 18px;
   line-height: 26px;
   padding-right: 0px;
@@ -455,7 +456,6 @@ body {
   background-color: #e6e6e6;
   border-radius: 10px 0px 0px 10px;
 }
-
 
 .discrepancy {
   outline: 2px solid #ff5757;
@@ -504,7 +504,7 @@ body {
 .footer-contacts {
   height: 100%;
   width: 720px;
-  margin-right: 31px;
+  margin-right: 11px;
   text-align: center;
 }
 
@@ -1573,7 +1573,7 @@ body {
   top: 22px;
 }
 
-.toggle{
+.toggle {
   display: flex;
   align-items: center;
   justify-content: center;
