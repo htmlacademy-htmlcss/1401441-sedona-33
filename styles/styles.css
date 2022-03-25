@@ -10,15 +10,8 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("..fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
-}
-
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("..fonts/pt-sans-italic.woff2") format("woff2");
 }
 
 html {
@@ -159,6 +152,10 @@ body {
   margin-left: auto;
 }
 
+.navigation-item {
+  max-width: 110px;
+}
+
 .navigation-link {
   display: block;
   padding: 24px 17px 20px 17px;
@@ -168,6 +165,7 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .navigation-icon {
@@ -204,14 +202,33 @@ body {
   min-height: 19px;
 }
 
+.booking-item {
+  max-width: 202px;
+  width: 195px;
+  overflow: hidden;
+  height: 43px;
+  display: flex;
+  padding-top: 8px;
+  align-items: flex-start;
+}
+
 .booking-item-button {
   font-size: 16px;
   line-height: 20px;
-  padding: 9px 26px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
   margin-left: 15px;
+  padding-left: 36px;
+  padding-right: 36px;
+  width: 180px;
+  max-width: 177px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  display: flex;
+  height: 28px;
+  padding-top: 8px;
 }
 
 .booking-item-button:hover {
@@ -398,7 +415,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   color: #ffffff;
   background-color: #000000;
   background-image: url(../project/images/home_page/background.jpg);
@@ -627,7 +643,7 @@ body {
 
 .footer-logo svg:active {
   fill: #756257;
-  fill-opacity: 30%;
+  fill-opacity: 0, 3;
 }
 
 .footer-logo path {
@@ -666,7 +682,7 @@ body {
 
 .modal-close-button:active {
   background-color: #e6e6e6;
-  fill-opacity: 30%;
+  fill-opacity: 0, 3;
   fill: inherit;
 }
 
@@ -1083,10 +1099,11 @@ body {
 .main-inner {
   color: #ffffff;
   background-color: #ffffff;
-  background-image: url(../project/images/catalog/catalog-background-1.jpg);
-  background-size: 100% auto;
   background-repeat: no-repeat;
   padding-bottom: 41px;
+  background-image: url(../project/images/catalog/catalog-background-1.jpg),
+    url(../project/images/catalog/catalog-background-2.jpg);
+  background-size: 100% auto;
 }
 
 .current {
@@ -1095,11 +1112,18 @@ body {
 
 .inner-title {
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   color: #ffffff;
-  padding: 11px 0 0 71px;
+  padding: 5px 0 0 71px;
   font-size: 60px;
   max-width: 528px;
+  max-width: 1023px;
+  max-height: 80px;
+  height: 51px;
+  line-height: 40px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Breadcrumbs */
@@ -1542,6 +1566,8 @@ body {
   align-items: center;
   color: #000000;
   background-color: #ffffff;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .select-control {
@@ -1662,7 +1688,7 @@ body {
 
 .hotels {
   margin-top: 32px;
-  margin-bottom: 8px;
+  margin-bottom: 30px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -1714,37 +1740,37 @@ body {
 /* Title */
 .product-card-title {
   margin: 0px;
-  padding-bottom: 16px;
   font-weight: 700;
   color: #000000;
   grid-area: title;
   font-size: 24px;
   line-height: 31px;
   max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
 }
 
 /* Type */
 .product-card-type {
-  margin: 0px;
-  padding-bottom: 16px;
   font-size: 18px;
-  line-height: 23px;
   font-weight: 400;
   color: #333333;
   text-transform: capitalize;
   grid-area: type;
   max-width: 133px;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
 }
 
 .product-card-more {
-  padding-top: 8px;
-  padding-bottom: 24px;
   margin-top: -7px;
   font-size: 16px;
-  line-height: 21px;
   border-radius: 4px;
   max-width: 134px;
   max-height: 37px;
+  overflow: hidden;
 }
 
 .product-card-more:hover {
@@ -1764,23 +1790,22 @@ body {
 }
 
 .product-card-price {
-  margin: 0px;
-  padding-bottom: 16px;
   font-size: 18px;
   font-weight: 400;
   color: #333333;
   text-transform: capitalize;
   max-width: 143px;
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
 }
 
 .product-card-favourite {
   grid-area: favourite;
   font-size: 16px;
-  line-height: 21px;
   background-color: #83b3d3;
   border-radius: 4px;
-  padding-top: 8px;
-  padding-bottom: 24px;
+  overflow: hidden;
   margin-top: -7px;
   max-width: 141px;
   max-height: 37px;
@@ -1838,18 +1863,15 @@ body {
 }
 
 .product-card-rating {
+  width: 160px;
+  height: 37px;
   grid-area: rating;
   border-radius: 4px;
   font-size: 16px;
-  line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #f2f2f2;
   margin-left: 7px;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  max-width: 160px;
-  max-height: 20px;
 }
 
 .product-card-stars {
@@ -1913,16 +1935,19 @@ body {
 /* Link */
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 17px;
   align-items: center;
 }
 
 .pagination-numbering {
   display: flex;
-  margin-top: 23px;
-  padding: 0;
+  flex-wrap: wrap;
+  max-width: 378px;
   list-style-type: none;
-  background-color: #ffffff;
-  max-width: 371px;
+  padding: 0;
+  margin: 0 300px 0 0;
 }
 
 .pagination-item:not(:last-child) {
@@ -1932,8 +1957,8 @@ body {
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   padding: 14px 20px;
   color: #ffffff;
   background-color: #83b3d3;
@@ -1942,8 +1967,7 @@ body {
   line-height: 26px;
   font-weight: 700;
   border-radius: 4px;
-  min-width: 55px;
-  min-height: 55px;
+  text-align: center;
 }
 
 .pagination-current {
@@ -1970,8 +1994,6 @@ body {
 .select-choose {
   display: flex;
   align-items: center;
-  margin-left: 300px;
-  max-width: 386px;
 }
 
 .select-control-description {
@@ -1979,17 +2001,16 @@ body {
   background-color: #ffffff;
   font-size: 18px;
   line-height: 23px;
+  margin-right: 45px;
 }
 
 .select-control-choose {
   width: 160px;
   height: 48px;
-  margin-left: 51px;
   padding-left: 16px;
   border: 2px solid #e6e6e6;
   border-radius: 4px;
   font-size: 18px;
-  line-height: 23px;
   font-weight: 400;
   color: #333333;
   appearance: none;
